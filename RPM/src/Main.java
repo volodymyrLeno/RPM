@@ -1,17 +1,18 @@
 import data.Event;
+import data.TransformationExample;
 
+import java.io.File;
 import java.util.HashMap;
 import java.util.List;
 
 public class Main {
 
     public static void main(String[] args) {
-        List<Event> events = logReader.readCSV("C:\\Volodymyr\\RPAMiner\\append_http\\logs.csv");
-        for(Event ev: events)
-            System.out.println(ev);
+        String path = new File("src\\logs\\test1.csv").getAbsolutePath();
+        List<Event> events = logReader.readCSV(path);
         HashMap<String, List<Event>> cases = segmentator.segment(events);
-        for(String id: cases.keySet())
-            System.out.println(cases.get(id));
-        //System.out.println(cases);
+        System.out.println("\n\n");
+        var example = transformationDiscoverer.extractExamples(cases);
+        transformationDiscoverer.discoverDataTransformations(example);
     }
 }

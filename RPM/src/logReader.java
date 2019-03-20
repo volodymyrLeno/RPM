@@ -28,8 +28,7 @@ public final class logReader {
         try (BufferedReader br = new BufferedReader(new FileReader(path))) {
 
             while ((line = br.readLine()) != null) {
-
-                String[] row = line.split("[,;]");
+                String[] row = line.split("[;]");
                 if(counter == 0) {
                     counter++;
                     Collections.addAll(attributes, row);

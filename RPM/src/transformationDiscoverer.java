@@ -1,6 +1,10 @@
+import data.Event;
+import data.TransformationExample;
+
 import java.io.*;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class transformationDiscoverer {
     public static String getFoofahTransformation(String exec, List<String> from, List<String> to, String setting){
@@ -87,6 +91,49 @@ public class transformationDiscoverer {
         }catch(Exception e){
             e.printStackTrace();
             return null;
+        }
+    }
+
+    public static List<TransformationExample> extractExamples(HashMap<String, List<Event>> cases) {
+        List<TransformationExample> ts = new ArrayList<>();
+        HashMap<String, List<String>> input = new HashMap<>();
+        HashMap<String, List<String>> output = new HashMap<>();
+        for(String caseID: cases.keySet()){
+            List<Event> events = new ArrayList<>(cases.get(caseID));
+            for(int i = events.size()-1; i >= 0; i--){
+                if(events.get(i).eventType.equals("editField")){
+                    String textField = events.get(i).payload.get("target.name");
+                    for(int j = i; j >= 0; j--)
+                        if(events.get(j).eventType.equals("copy")){
+                            for(int k = j; k >= 0; k--)
+                                if(events.get(k).eventType.equals("getCell")){
+                                    if(input.containsKey(textField) ){
+                                        input.put(textField, Stream.concat(input.get(textField).stream(), Collections.singletonList(events.get(k).
+                                                payload.get("target.value")).stream()).collect(Collectors.toList()));
+                                        output.put(textField, Stream.concat(output.get(textField).stream(), Collections.singletonList(events.get(i).
+                                                payload.get("target.value")).stream()).collect(Collectors.toList()));
+                                        break;
+                                    }
+                                    else{
+                                        input.put(textField, Collections.singletonList(events.get(k).payload.get("target.value")));
+                                        output.put(textField, Collections.singletonList(events.get(i).payload.get("target.value")));
+                                        break;
+                                    }
+                                }
+                                break;
+                        }
+                }
+            }
+        }
+        for(String key: input.keySet())
+            ts.add(new TransformationExample(key, input.get(key), output.get(key)));
+        return ts;
+    }
+
+    public static void discoverDataTransformations(List<TransformationExample> transformationExamples){
+        for(TransformationExample te: transformationExamples){
+            System.out.println(te + "\n");
+            System.out.println(getFoofahTransformation("/home/vleno/Desktop/foofah-master/foofah.py", te.getInputExamples(), te.getOutputExamples(), ""));
         }
     }
 }
