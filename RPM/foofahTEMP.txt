@@ -1,0 +1,1 @@
+{"InputTable": [["Australia"],["Germany"],["Australia"],["France"],["United States"],["Sweden"],["Australia"],["Italy"],["Germany"],["Ukraine"]], "OutputTable": [["Australia"],["Germany"],["Australia"],["France"],["United States"],["Sweden"],["Australia"],["Italy"],["Germany"],["Ukraine"]]}
