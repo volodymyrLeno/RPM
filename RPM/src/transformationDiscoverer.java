@@ -108,15 +108,17 @@ public class transformationDiscoverer {
                             for(int k = j; k >= 0; k--)
                                 if(events.get(k).eventType.equals("getCell")){
                                     if(input.containsKey(textField) ){
-                                        input.put(textField, Stream.concat(input.get(textField).stream(), Collections.singletonList(events.get(k).
-                                                payload.get("target.value")).stream()).collect(Collectors.toList()));
-                                        output.put(textField, Stream.concat(output.get(textField).stream(), Collections.singletonList(events.get(i).
-                                                payload.get("target.value")).stream()).collect(Collectors.toList()));
+                                        String in = events.get(k).payload.get("target.value").replaceAll("\\P{Print}", " ");
+                                        input.put(textField, Stream.concat(input.get(textField).stream(), Collections.singletonList(in).stream()).collect(Collectors.toList()));
+                                        String out =  events.get(i).payload.get("target.value").replaceAll("\\P{Print}", " ");
+                                        output.put(textField, Stream.concat(output.get(textField).stream(), Collections.singletonList(out).stream()).collect(Collectors.toList()));
                                         break;
                                     }
                                     else{
-                                        input.put(textField, Collections.singletonList(events.get(k).payload.get("target.value")));
-                                        output.put(textField, Collections.singletonList(events.get(i).payload.get("target.value")));
+                                        String in = events.get(k).payload.get("target.value").replace("\\P{Print}", " ");
+                                        input.put(textField, Collections.singletonList(in));
+                                        String out = events.get(i).payload.get("target.value").replace("\\P{Print}", " ");
+                                        output.put(textField, Collections.singletonList(out));
                                         break;
                                     }
                                 }
@@ -133,7 +135,8 @@ public class transformationDiscoverer {
     public static void discoverDataTransformations(List<TransformationExample> transformationExamples){
         for(TransformationExample te: transformationExamples){
             System.out.println(te + "\n");
-            System.out.println(getFoofahTransformation("/home/vleno/Desktop/foofah-master/foofah.py", te.getInputExamples(), te.getOutputExamples(), ""));
+            System.out.println(getFoofahTransformation("/home/vleno/Desktop/foofah-master/foofah.py", Collections.singletonList(te.getInputExamples().get(0)), Collections.singletonList(te.getOutputExamples().get(0)), ""));
+            //System.out.println(getFoofahTransformation("/home/vleno/Desktop/foofah-master/foofah.py", te.getInputExamples().subList(1, 4), te.getOutputExamples().subList(1,4), ""));
         }
     }
 }
