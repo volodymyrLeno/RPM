@@ -10,13 +10,19 @@ public class Event {
     public HashMap<String, String> payload;
 
     public Event(List<String> attributes, String[] values){
+        String temp;
         this.caseID = "";
         this.eventType = values[attributes.indexOf("eventType")];
         this.timestamp = values[attributes.indexOf("timeStamp")];
         payload = new HashMap<>();
-        for(int i = 0; i < values.length; i++)
-            if(!values[i].equals("") && i != attributes.indexOf("eventType") && i != attributes.indexOf("timeStamp"))
-                payload.put(attributes.get(i), values[i]);
+        for(int i = 0; i < values.length; i++){
+            if(values[i].matches("\"+"))
+                temp = "\"\"";
+            else
+                temp = values[i].replaceAll("\"([^;\"\\[\\]]+)\"","$1").replaceAll("\"{2,}","\"").replaceAll("^\"(.*)\"$", "$1");
+            if(!temp.equals("") && i != attributes.indexOf("eventType") && i != attributes.indexOf("timeStamp"))
+                payload.put(attributes.get(i), temp);
+        }
     }
 
     public Event(String activityName, String timestamp) {

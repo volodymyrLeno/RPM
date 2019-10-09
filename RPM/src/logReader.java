@@ -1,6 +1,5 @@
 import data.Event;
 import org.deckfour.xes.factory.XFactoryNaiveImpl;
-import org.deckfour.xes.in.XParser;
 import org.deckfour.xes.in.XesXmlGZIPParser;
 import org.deckfour.xes.in.XesXmlParser;
 import org.deckfour.xes.model.XAttributeLiteral;
@@ -11,7 +10,6 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
@@ -28,7 +26,9 @@ public final class logReader {
         try (BufferedReader br = new BufferedReader(new FileReader(path))) {
 
             while ((line = br.readLine()) != null) {
-                String[] row = line.split("[;]");
+                if(Character.codePointAt(line, 0) == 0xFEFF)
+                    line = line.substring(1);
+                String[] row = line.split("[,](?=([^\"]*\"[^\"]*\")*[^\"]*$)");
                 if(counter == 0) {
                     counter++;
                     Collections.addAll(attributes, row);

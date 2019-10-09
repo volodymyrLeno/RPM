@@ -1,528 +1,330 @@
-timeStamp,userID,targetApp,eventType,url,content,target.workbookName,target.sheetName,target.id,target.class,target.tagName,target.type,target.name,target.value,target.innerText,target.checked,target.href,target.option
-2019-03-19T03:27:47.344Z,vleno,Chrome,tab activated,https://forms.zohopublic.com/universityofmelbourne/form/NewRecord/formperma/RE682jAqAfIkgTwQyjpvH4PZRbCwMXQN4Wf_RqmB9oM,,,,,NA,,,,,,NA,,NA
-2019-03-19T03:27:47.355Z,vleno,Chrome,focus window changed,https://forms.zohopublic.com/universityofmelbourne/form/NewRecord/formperma/RE682jAqAfIkgTwQyjpvH4PZRbCwMXQN4Wf_RqmB9oM,,,,,NA,,,,,,NA,,NA
-2019-03-19T03:27:48.156Z,vleno,Chrome,start_page,https://forms.zohopublic.com/universityofmelbourne/form/NewRecord/formperma/RE682jAqAfIkgTwQyjpvH4PZRbCwMXQN4Wf_RqmB9oM,,,,,NA,,,,,,NA,,NA
-2019-03-19T03:28:31.910Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet2,A2,NA,,,,John Doe,,NA,,NA
-2019-03-19T03:28:32.849Z,,OS-Clipboard,copy,,John Doe,,,,NA,,,,,,NA,,NA
-2019-03-19T03:28:35.723Z,vleno,Chrome,paste,,John Doe,,,,NA,INPUT,text,Name_First,,,NA,,NA
-2019-03-19T03:28:40.445Z,vleno,Chrome,editField,,,,,,NA,INPUT,text,Name_First,John,,NA,,NA
-2019-03-19T03:28:40.507Z,vleno,Chrome,mouseClick,,,,,,NA,INPUT,text,Name_Last,,,NA,,NA
-2019-03-19T03:28:41.074Z,vleno,Chrome,paste,,John Doe,,,,NA,INPUT,text,Name_Last,,,NA,,NA
-2019-03-19T03:28:44.418Z,vleno,Chrome,editField,,,,,,NA,INPUT,text,Name_Last,Doe,,NA,,NA
-2019-03-19T03:28:52.092Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet2,B2,NA,,,,11/03/1986,,NA,,NA
-2019-03-19T03:28:52.184Z,,OS-Clipboard,copy,,11/03/1986,,,,NA,,,,,,NA,,NA
-2019-03-19T03:28:54.178Z,vleno,Chrome,mouseClick,,,,,Date-date,NA,INPUT,text,date,,,NA,,NA
-2019-03-19T03:28:54.355Z,vleno,Chrome,paste,,11/03/1986,,,Date-date,NA,INPUT,text,date,,,NA,,NA
-2019-03-19T03:28:58.726Z,vleno,Chrome,editField,,,,,Date-date,NA,INPUT,text,date,11-03-1986,,NA,,NA
-2019-03-19T03:29:03.381Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet2,E2,NA,,,,Australia,,NA,,NA
-2019-03-19T03:29:03.415Z,,OS-Clipboard,copy,,Australia,,,,NA,,,,,,NA,,NA
-2019-03-19T03:29:07.795Z,vleno,Chrome,mouseClick,,,,,,NA,INPUT,text,SingleLine,,,NA,,NA
-2019-03-19T03:29:08.186Z,vleno,Chrome,paste,,Australia,,,,NA,INPUT,text,SingleLine,,,NA,,NA
-2019-03-19T03:29:10.387Z,vleno,Chrome,editField,,,,,,NA,INPUT,text,SingleLine,Australia,,NA,,NA
-2019-03-19T03:29:13.644Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet2,C2,NA,,,,+61 039 689 9324,,NA,,NA
-2019-03-19T03:29:13.708Z,,OS-Clipboard,copy,,+61 039 689 9324,,,,NA,,,,,,NA,,NA
-2019-03-19T03:29:15.483Z,vleno,Chrome,mouseClick,,,,,,NA,INPUT,text,countrycode,,,NA,,NA
-2019-03-19T03:29:15.674Z,vleno,Chrome,paste,,+61 039 689 9324,,,,NA,INPUT,text,countrycode,,,NA,,NA
-2019-03-19T03:29:20.891Z,vleno,Chrome,editField,,,,,,NA,INPUT,text,countrycode,039-689-9324,,NA,,NA
-2019-03-19T03:29:23.153Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet2,D2,NA,,,,jdoe@gmail.com,,NA,,NA
-2019-03-19T03:29:23.195Z,,OS-Clipboard,copy,,jdoe@gmail.com,,,,NA,,,,,,NA,,NA
-2019-03-19T03:29:25.083Z,vleno,Chrome,mouseClick,,,,,,NA,INPUT,text,Email,,,NA,,NA
-2019-03-19T03:29:25.250Z,vleno,Chrome,paste,,jdoe@gmail.com,,,,NA,INPUT,text,Email,,,NA,,NA
-2019-03-19T03:29:25.683Z,vleno,Chrome,editField,,,,,,NA,INPUT,text,Email,jdoe@gmail.com,,NA,,NA
-2019-03-19T03:29:28.704Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet2,F2,NA,,,,122 Albert St,,,,
-2019-03-19T03:29:32.326Z,,OS-Clipboard,copy,,122 Albert St,,,,,,,,,,,,
-2019-03-19T03:29:33.962Z,vleno,Chrome,mouseClick,,,,,,NA,INPUT,text,Address_AddressLine1,,,NA,,NA
-2019-03-19T03:29:34.298Z,vleno,Chrome,paste,,122 Albert St,,,,,,,,,,,,
-2019-03-19T03:29:34.778Z,vleno,Chrome,editField,,,,,,NA,INPUT,text,Address_AddressLine1,122 Albert St,,,,
-2019-03-19T03:29:42.009Z,,OS-Clipboard,copy,,Melbourne,,,,NA,,,,,,NA,,NA
-2019-03-19T03:29:44.298Z,vleno,Chrome,mouseClick,,,,,,NA,INPUT,text,Address_City,,,NA,,NA
-2019-03-19T03:29:44.602Z,vleno,Chrome,paste,,Melbourne,,,,NA,INPUT,text,Address_City,,,NA,,NA
-2019-03-19T03:29:45.058Z,vleno,Chrome,editField,,,,,,NA,INPUT,text,Address_City,Melbourne,,NA,,NA
-2019-03-19T03:29:47.970Z,,OS-Clipboard,copy,,VIC,,,,NA,,,,,,NA,,NA
-2019-03-19T03:29:49.738Z,vleno,Chrome,mouseClick,,,,,,NA,INPUT,text,Address_Region,,,NA,,NA
-2019-03-19T03:29:49.923Z,vleno,Chrome,paste,,VIC,,,,NA,INPUT,text,Address_Region,,,NA,,NA
-2019-03-19T03:29:50.171Z,vleno,Chrome,editField,,,,,,NA,INPUT,text,Address_Region,VIC,,NA,,NA
-2019-03-19T03:29:54.006Z,,OS-Clipboard,copy,,3207,,,,NA,,,,,,NA,,NA
-2019-03-19T03:29:55.634Z,vleno,Chrome,mouseClick,,,,,,NA,INPUT,text,Address_ZipCode,,,NA,,NA
-2019-03-19T03:29:55.836Z,vleno,Chrome,paste,,3207,,,,NA,INPUT,text,Address_ZipCode,,,NA,,NA
-2019-03-19T03:29:56.324Z,vleno,Chrome,editField,,,,,,NA,INPUT,text,Address_ZipCode,3207,,NA,,NA
-2019-03-19T03:29:58.702Z,,OS-Clipboard,copy,,Australia,,,,NA,,,,,,NA,,NA
-2019-03-19T03:30:04.955Z,vleno,Chrome,editField,,,,,Address_Country,NA,SELECT,select-one,Address_Country,Australia,,NA,,NA
-2019-03-19T03:30:08.298Z,vleno,Chrome,mouseClick,,,,,,NA,BUTTON,submit,,submit,Submit,NA,,NA
-2019-03-19T03:30:09.483Z,vleno,Chrome,link,https://forms.zohopublic.com/universityofmelbourne/form/NewRecord/formperma/RE682jAqAfIkgTwQyjpvH4PZRbCwMXQN4Wf_RqmB9oM/thankyou,,,,,NA,,,,,,NA,,NA
-2019-03-19T03:30:12.203Z,vleno,Chrome,mouseClick,,,,,,NA,B,,,,Add another response,NA,https://forms.zohopublic.com/universityofmelbourne/form/NewRecord/formperma/RE682jAqAfIkgTwQyjpvH4PZRbCwMXQN4Wf_RqmB9oM,NA
-2019-03-19T03:30:12.591Z,vleno,Chrome,link,https://forms.zohopublic.com/universityofmelbourne/form/NewRecord/formperma/RE682jAqAfIkgTwQyjpvH4PZRbCwMXQN4Wf_RqmB9oM,,,,,NA,,,,,,NA,,NA
-2019-03-19T03:30:16.978Z,vleno,Excel,editCell,,,StudentRecords.xlsx,Sheet2,F2,NA,,,,122 Albert St,,,,
-2019-03-19T03:30:16.979Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet2,A3,NA,,,,Albert Rauf,,NA,,NA
-2019-03-19T03:30:17.040Z,,OS-Clipboard,copy,,Albert Rauf,,,,NA,,,,,,NA,,NA
-2019-03-19T03:30:18.866Z,vleno,Chrome,mouseClick,,,,,,NA,INPUT,text,Name_First,,,NA,,NA
-2019-03-19T03:30:19.338Z,vleno,Chrome,paste,,Albert Rauf,,,,NA,INPUT,text,Name_First,,,NA,,NA
-2019-03-19T03:30:21.092Z,vleno,Chrome,editField,,,,,,NA,INPUT,text,Name_First,Albert,,NA,,NA
-2019-03-19T03:30:21.148Z,vleno,Chrome,mouseClick,,,,,,NA,INPUT,text,Name_Last,,,NA,,NA
-2019-03-19T03:30:21.554Z,vleno,Chrome,paste,,Albert Rauf,,,,NA,INPUT,text,Name_Last,,,NA,,NA
-2019-03-19T03:30:23.915Z,vleno,Chrome,editField,,,,,,NA,INPUT,text,Name_Last,Rauf,,NA,,NA
-2019-03-19T03:30:26.470Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet2,B3,NA,,,,11/04/1986,,NA,,NA
-2019-03-19T03:30:26.568Z,,OS-Clipboard,copy,,11/04/1986,,,,NA,,,,,,NA,,NA
-2019-03-19T03:30:28.418Z,vleno,Chrome,mouseClick,,,,,Date-date,NA,INPUT,text,date,,,NA,,NA
-2019-03-19T03:30:28.635Z,vleno,Chrome,paste,,11/04/1986,,,Date-date,NA,INPUT,text,date,,,NA,,NA
-2019-03-19T03:30:34.976Z,vleno,Chrome,editField,,,,,Date-date,NA,INPUT,text,date,11-04-1986,,NA,,NA
-2019-03-19T03:30:39.686Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet2,E3,NA,,,,Germany,,NA,,NA
-2019-03-19T03:30:39.741Z,,OS-Clipboard,copy,,Germany,,,,NA,,,,,,NA,,NA
-2019-03-19T03:30:42.042Z,vleno,Chrome,mouseClick,,,,,,NA,INPUT,text,SingleLine,,,NA,,NA
-2019-03-19T03:30:42.258Z,vleno,Chrome,paste,,Germany,,,,NA,INPUT,text,SingleLine,,,NA,,NA
-2019-03-19T03:30:42.627Z,vleno,Chrome,editField,,,,,,NA,INPUT,text,SingleLine,Germany,,NA,,NA
-2019-03-19T03:30:44.967Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet2,C3,NA,,,,+61 043 512 4834,,NA,,NA
-2019-03-19T03:30:45.047Z,,OS-Clipboard,copy,,+61 043 512 4834,,,,NA,,,,,,NA,,NA
-2019-03-19T03:30:46.595Z,vleno,Chrome,mouseClick,,,,,,NA,INPUT,text,countrycode,,,NA,,NA
-2019-03-19T03:30:46.803Z,vleno,Chrome,paste,,+61 043 512 4834,,,,NA,INPUT,text,countrycode,,,NA,,NA
-2019-03-19T03:30:52.164Z,vleno,Chrome,editField,,,,,,NA,INPUT,text,countrycode,043-512-4834,,NA,,NA
-2019-03-19T03:30:54.534Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet2,D3,NA,,,,arauf@gmail.com,,NA,,NA
-2019-03-19T03:30:54.601Z,,OS-Clipboard,copy,,arauf@gmail.com,,,,NA,,,,,,NA,,NA
-2019-03-19T03:30:56.620Z,vleno,Chrome,mouseClick,,,,,,NA,INPUT,text,Email,,,NA,,NA
-2019-03-19T03:30:56.805Z,vleno,Chrome,paste,,arauf@gmail.com,,,,NA,INPUT,text,Email,,,NA,,NA
-2019-03-19T03:30:57.213Z,vleno,Chrome,editField,,,,,,NA,INPUT,text,Email,arauf@gmail.com,,NA,,NA
-2019-03-19T03:31:01.318Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet2,F3,NA,,,,99 Beacon Rd,,,,
-2019-03-19T03:31:04.407Z,,OS-Clipboard,copy,,99 Beacon Rd,,,,,,,,,,,,
-2019-03-19T03:31:06.340Z,vleno,Chrome,mouseClick,,,,,,NA,INPUT,text,Address_AddressLine1,,,NA,,NA
-2019-03-19T03:31:06.533Z,vleno,Chrome,paste,,99 Beacon Rd,,,,,,,,,,,,
-2019-03-19T03:31:07.318Z,vleno,Chrome,editField,,,,,,NA,INPUT,text,Address_AddressLine1,99 Beacon Rd,,,,
-2019-03-19T03:31:10.945Z,,OS-Clipboard,copy,,Melbourne,,,,NA,,,,,,NA,,NA
-2019-03-19T03:31:12.462Z,vleno,Chrome,mouseClick,,,,,,NA,INPUT,text,Address_City,,,NA,,NA
-2019-03-19T03:31:12.631Z,vleno,Chrome,paste,,Melbourne,,,,NA,INPUT,text,Address_City,,,NA,,NA
-2019-03-19T03:31:12.909Z,vleno,Chrome,editField,,,,,,NA,INPUT,text,Address_City,Melbourne,,NA,,NA
-2019-03-19T03:31:19.158Z,,OS-Clipboard,copy,,VIC,,,,NA,,,,,,NA,,NA
-2019-03-19T03:31:20.764Z,vleno,Chrome,mouseClick,,,,,,NA,INPUT,text,Address_Region,,,NA,,NA
-2019-03-19T03:31:20.919Z,vleno,Chrome,paste,,VIC,,,,NA,INPUT,text,Address_Region,,,NA,,NA
-2019-03-19T03:31:21.189Z,vleno,Chrome,editField,,,,,,NA,INPUT,text,Address_Region,VIC,,NA,,NA
-2019-03-19T03:31:24.491Z,,OS-Clipboard,copy,,3207,,,,NA,,,,,,NA,,NA
-2019-03-19T03:31:25.789Z,vleno,Chrome,mouseClick,,,,,,NA,INPUT,text,Address_ZipCode,,,NA,,NA
-2019-03-19T03:31:25.967Z,vleno,Chrome,paste,,3207,,,,NA,INPUT,text,Address_ZipCode,,,NA,,NA
-2019-03-19T03:31:26.591Z,vleno,Chrome,editField,,,,,,NA,INPUT,text,Address_ZipCode,3207,,NA,,NA
-2019-03-19T03:31:28.962Z,,OS-Clipboard,copy,,Australia,,,,NA,,,,,,NA,,NA
-2019-03-19T03:31:35.077Z,vleno,Chrome,editField,,,,,Address_Country,NA,SELECT,select-one,Address_Country,Australia,,NA,,NA
-2019-03-19T03:31:37.644Z,vleno,Chrome,mouseClick,,,,,DecisionBox,NA,INPUT,checkbox,DecisionBox,on,,TRUE,,NA
-2019-03-19T03:31:37.645Z,vleno,Chrome,editField,,,,,DecisionBox,NA,INPUT,checkbox,DecisionBox,on,,TRUE,,NA
-2019-03-19T03:31:39.414Z,vleno,Chrome,mouseClick,,,,,,NA,BUTTON,submit,,submit,Submit,NA,,NA
-2019-03-19T03:31:40.575Z,vleno,Chrome,link,https://forms.zohopublic.com/universityofmelbourne/form/NewRecord/formperma/RE682jAqAfIkgTwQyjpvH4PZRbCwMXQN4Wf_RqmB9oM/thankyou,,,,,NA,,,,,,NA,,NA
-2019-03-19T03:31:42.807Z,vleno,Chrome,mouseClick,,,,,,NA,B,,,,Add another response,NA,https://forms.zohopublic.com/universityofmelbourne/form/NewRecord/formperma/RE682jAqAfIkgTwQyjpvH4PZRbCwMXQN4Wf_RqmB9oM,NA
-2019-03-19T03:31:43.159Z,vleno,Chrome,link,https://forms.zohopublic.com/universityofmelbourne/form/NewRecord/formperma/RE682jAqAfIkgTwQyjpvH4PZRbCwMXQN4Wf_RqmB9oM,,,,,NA,,,,,,NA,,NA
-2019-03-19T03:31:46.663Z,vleno,Excel,editCell,,,StudentRecords.xlsx,Sheet2,F3,NA,,,,99 Beacon Rd,,,,
-2019-03-19T03:31:46.664Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet2,A4,NA,,,,Steven Richards,,NA,,NA
-2019-03-19T03:31:46.736Z,,OS-Clipboard,copy,,Steven Richards,,,,NA,,,,,,NA,,NA
-2019-03-19T03:31:48.669Z,vleno,Chrome,paste,,Steven Richards,,,,NA,INPUT,text,Name_First,,,NA,,NA
-2019-03-19T03:31:50.948Z,vleno,Chrome,editField,,,,,,NA,INPUT,text,Name_First,Steven,,NA,,NA
-2019-03-19T03:31:51.004Z,vleno,Chrome,mouseClick,,,,,,NA,INPUT,text,Name_Last,,,NA,,NA
-2019-03-19T03:31:51.386Z,vleno,Chrome,paste,,Steven Richards,,,,NA,INPUT,text,Name_Last,,,NA,,NA
-2019-03-19T03:31:54.724Z,vleno,Chrome,editField,,,,,,NA,INPUT,text,Name_Last,Richards,,NA,,NA
-2019-03-19T03:31:57.550Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet2,B4,NA,,,,18/06/1986,,NA,,NA
-2019-03-19T03:31:57.646Z,,OS-Clipboard,copy,,18/06/1986,,,,NA,,,,,,NA,,NA
-2019-03-19T03:31:59.954Z,vleno,Chrome,mouseClick,,,,,Date-date,NA,INPUT,text,date,,,NA,,NA
-2019-03-19T03:32:00.147Z,vleno,Chrome,paste,,18/06/1986,,,Date-date,NA,INPUT,text,date,,,NA,,NA
-2019-03-19T03:32:04.349Z,vleno,Chrome,editField,,,,,Date-date,NA,INPUT,text,date,18-06-1986,,NA,,NA
-2019-03-19T03:32:08.093Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet2,E4,NA,,,,Australia,,NA,,NA
-2019-03-19T03:32:08.153Z,,OS-Clipboard,copy,,Australia,,,,NA,,,,,,NA,,NA
-2019-03-19T03:32:09.723Z,vleno,Chrome,mouseClick,,,,,,NA,INPUT,text,SingleLine,,,NA,,NA
-2019-03-19T03:32:09.883Z,vleno,Chrome,paste,,Australia,,,,NA,INPUT,text,SingleLine,,,NA,,NA
-2019-03-19T03:32:10.315Z,vleno,Chrome,editField,,,,,,NA,INPUT,text,SingleLine,Australia,,NA,,NA
-2019-03-19T03:32:12.559Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet2,C4,NA,,,,+61 035 376 0669,,NA,,NA
-2019-03-19T03:32:12.651Z,,OS-Clipboard,copy,,+61 035 376 0669,,,,NA,,,,,,NA,,NA
-2019-03-19T03:32:14.226Z,vleno,Chrome,mouseClick,,,,,,NA,INPUT,text,countrycode,,,NA,,NA
-2019-03-19T03:32:14.394Z,vleno,Chrome,paste,,+61 035 376 0669,,,,NA,INPUT,text,countrycode,,,NA,,NA
-2019-03-19T03:32:19.243Z,vleno,Chrome,editField,,,,,,NA,INPUT,text,countrycode,035-376-0669,,NA,,NA
-2019-03-19T03:32:21.565Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet2,D4,NA,,,,srichards@gmail.com,,NA,,NA
-2019-03-19T03:32:21.655Z,,OS-Clipboard,copy,,srichards@gmail.com,,,,NA,,,,,,NA,,NA
-2019-03-19T03:32:23.266Z,vleno,Chrome,mouseClick,,,,,,NA,INPUT,text,Email,,,NA,,NA
-2019-03-19T03:32:23.453Z,vleno,Chrome,paste,,srichards@gmail.com,,,,NA,INPUT,text,Email,,,NA,,NA
-2019-03-19T03:32:23.731Z,vleno,Chrome,editField,,,,,,NA,INPUT,text,Email,srichards@gmail.com,,NA,,NA
-2019-03-19T03:32:27.206Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet2,F4,NA,,,,396 Clarendon St,,,,
-2019-03-19T03:32:30.593Z,,OS-Clipboard,copy,,396 Clarendon St,,,,,,,,,,,,
-2019-03-19T03:32:31.994Z,vleno,Chrome,mouseClick,,,,,,NA,INPUT,text,Address_AddressLine1,,,NA,,NA
-2019-03-19T03:32:32.161Z,vleno,Chrome,paste,,396 Clarendon St,,,,,,,,,,,,
-2019-03-19T03:32:32.411Z,vleno,Chrome,editField,,,,,,NA,INPUT,text,Address_AddressLine1,396 Clarendon St,,,,
-2019-03-19T03:32:36.493Z,,OS-Clipboard,copy,,Melbourne,,,,NA,,,,,,NA,,NA
-2019-03-19T03:32:38.250Z,vleno,Chrome,mouseClick,,,,,,NA,INPUT,text,Address_City,,,NA,,NA
-2019-03-19T03:32:38.477Z,vleno,Chrome,paste,,Melbourne,,,,NA,INPUT,text,Address_City,,,NA,,NA
-2019-03-19T03:32:39.011Z,vleno,Chrome,editField,,,,,,NA,INPUT,text,Address_City,Melbourne,,NA,,NA
-2019-03-19T03:32:42.017Z,,OS-Clipboard,copy,,VIC,,,,NA,,,,,,NA,,NA
-2019-03-19T03:32:43.602Z,vleno,Chrome,mouseClick,,,,,,NA,INPUT,text,Address_Region,,,NA,,NA
-2019-03-19T03:32:43.747Z,vleno,Chrome,paste,,VIC,,,,NA,INPUT,text,Address_Region,,,NA,,NA
-2019-03-19T03:32:44.027Z,vleno,Chrome,editField,,,,,,NA,INPUT,text,Address_Region,VIC,,NA,,NA
-2019-03-19T03:32:47.184Z,,OS-Clipboard,copy,,3205,,,,NA,,,,,,NA,,NA
-2019-03-19T03:32:49.018Z,vleno,Chrome,mouseClick,,,,,,NA,INPUT,text,Address_ZipCode,,,NA,,NA
-2019-03-19T03:32:49.275Z,vleno,Chrome,paste,,3205,,,,NA,INPUT,text,Address_ZipCode,,,NA,,NA
-2019-03-19T03:32:49.586Z,vleno,Chrome,editField,,,,,,NA,INPUT,text,Address_ZipCode,3205,,NA,,NA
-2019-03-19T03:32:52.275Z,,OS-Clipboard,copy,,Australia,,,,NA,,,,,,NA,,NA
-2019-03-19T03:32:55.731Z,vleno,Chrome,editField,,,,,Address_Country,NA,SELECT,select-one,Address_Country,Australia,,NA,,NA
-2019-03-19T03:32:59.207Z,vleno,Chrome,mouseClick,,,,,,NA,BUTTON,submit,,submit,Submit,NA,,NA
-2019-03-19T03:33:00.322Z,vleno,Chrome,link,https://forms.zohopublic.com/universityofmelbourne/form/NewRecord/formperma/RE682jAqAfIkgTwQyjpvH4PZRbCwMXQN4Wf_RqmB9oM/thankyou,,,,,NA,,,,,,NA,,NA
-2019-03-19T03:33:02.501Z,vleno,Chrome,mouseClick,,,,,,NA,A,,,,Add another response,NA,https://forms.zohopublic.com/universityofmelbourne/form/NewRecord/formperma/RE682jAqAfIkgTwQyjpvH4PZRbCwMXQN4Wf_RqmB9oM,NA
-2019-03-19T03:33:02.838Z,vleno,Chrome,link,https://forms.zohopublic.com/universityofmelbourne/form/NewRecord/formperma/RE682jAqAfIkgTwQyjpvH4PZRbCwMXQN4Wf_RqmB9oM,,,,,NA,,,,,,NA,,NA
-2019-03-19T03:33:15.488Z,vleno,Excel,editCell,,,StudentRecords.xlsx,Sheet2,A5,NA,,,,Gerard Dubois,,NA,,NA
-2019-03-19T03:33:15.490Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet2,A5,NA,,,,Gerard Dubois,,NA,,NA
-2019-03-19T03:33:21.990Z,,OS-Clipboard,copy,,Gerard Dubois,,,,NA,,,,,,NA,,NA
-2019-03-19T03:33:24.602Z,vleno,Chrome,paste,,Gerard Dubois,,,,NA,INPUT,text,Name_First,,,NA,,NA
-2019-03-19T03:33:26.724Z,vleno,Chrome,editField,,,,,,NA,INPUT,text,Name_First,Gerard,,NA,,NA
-2019-03-19T03:33:26.789Z,vleno,Chrome,mouseClick,,,,,,NA,INPUT,text,Name_Last,,,NA,,NA
-2019-03-19T03:33:27.251Z,vleno,Chrome,paste,,Gerard Dubois,,,,NA,INPUT,text,Name_Last,,,NA,,NA
-2019-03-19T03:33:29.819Z,vleno,Chrome,editField,,,,,,NA,INPUT,text,Name_Last,Dubois,,NA,,NA
-2019-03-19T03:33:32.854Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet2,B5,NA,,,,08/04/1987,,NA,,NA
-2019-03-19T03:33:32.902Z,,OS-Clipboard,copy,,08/04/1987,,,,NA,,,,,,NA,,NA
-2019-03-19T03:33:34.763Z,vleno,Chrome,mouseClick,,,,,Date-date,NA,INPUT,text,date,,,NA,,NA
-2019-03-19T03:33:35.115Z,vleno,Chrome,paste,,08/04/1987,,,Date-date,NA,INPUT,text,date,,,NA,,NA
-2019-03-19T03:33:39.213Z,vleno,Chrome,editField,,,,,Date-date,NA,INPUT,text,date,08-04-1987,,NA,,NA
-2019-03-19T03:33:42.061Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet2,E5,NA,,,,France,,NA,,NA
-2019-03-19T03:33:42.106Z,,OS-Clipboard,copy,,France,,,,NA,,,,,,NA,,NA
-2019-03-19T03:33:43.642Z,vleno,Chrome,mouseClick,,,,,,NA,INPUT,text,SingleLine,,,NA,,NA
-2019-03-19T03:33:43.836Z,vleno,Chrome,paste,,France,,,,NA,INPUT,text,SingleLine,,,NA,,NA
-2019-03-19T03:33:44.147Z,vleno,Chrome,editField,,,,,,NA,INPUT,text,SingleLine,France,,NA,,NA
-2019-03-19T03:33:47.172Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet2,C5,NA,,,,+61 043 532 6105,,NA,,NA
-2019-03-19T03:33:47.270Z,,OS-Clipboard,copy,,+61 043 532 6105,,,,NA,,,,,,NA,,NA
-2019-03-19T03:33:49.098Z,vleno,Chrome,mouseClick,,,,,,NA,INPUT,text,countrycode,,,NA,,NA
-2019-03-19T03:33:49.269Z,vleno,Chrome,paste,,+61 043 532 6105,,,,NA,INPUT,text,countrycode,,,NA,,NA
-2019-03-19T03:33:54.172Z,vleno,Chrome,editField,,,,,,NA,INPUT,text,countrycode,043-532-6105,,NA,,NA
-2019-03-19T03:33:56.594Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet2,D5,NA,,,,gdubois@gmail.com,,NA,,NA
-2019-03-19T03:33:56.663Z,,OS-Clipboard,copy,,gdubois@gmail.com,,,,NA,,,,,,NA,,NA
-2019-03-19T03:33:58.146Z,vleno,Chrome,mouseClick,,,,,,NA,INPUT,text,Email,,,NA,,NA
-2019-03-19T03:33:58.398Z,vleno,Chrome,paste,,gdubois@gmail.com,,,,NA,INPUT,text,Email,,,NA,,NA
-2019-03-19T03:33:58.707Z,vleno,Chrome,editField,,,,,,NA,INPUT,text,Email,gdubois@gmail.com,,NA,,NA
-2019-03-19T03:34:01.133Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet2,C5,NA,,,,+61 043 532 6105,,NA,,NA
-2019-03-19T03:34:03.897Z,,OS-Clipboard,copy,,120 Princes St,,,,,,,,,,,,
-2019-03-19T03:34:05.426Z,vleno,Chrome,mouseClick,,,,,,NA,INPUT,text,Address_AddressLine1,,,NA,,NA
-2019-03-19T03:34:05.600Z,vleno,Chrome,paste,,120 Princes St,,,,,,,,,,,,
-2019-03-19T03:34:05.994Z,vleno,Chrome,editField,,,,,,NA,INPUT,text,Address_AddressLine1,120 Princes St,,,,
-2019-03-19T03:34:09.293Z,,OS-Clipboard,copy,,Melbourne,,,,NA,,,,,,NA,,NA
-2019-03-19T03:34:10.842Z,vleno,Chrome,mouseClick,,,,,,NA,INPUT,text,Address_City,,,NA,,NA
-2019-03-19T03:34:11.055Z,vleno,Chrome,paste,,Melbourne,,,,NA,INPUT,text,Address_City,,,NA,,NA
-2019-03-19T03:34:11.370Z,vleno,Chrome,editField,,,,,,NA,INPUT,text,Address_City,Melbourne,,NA,,NA
-2019-03-19T03:34:16.732Z,,OS-Clipboard,copy,,VIC,,,,NA,,,,,,NA,,NA
-2019-03-19T03:34:18.596Z,vleno,Chrome,mouseClick,,,,,,NA,INPUT,text,Address_Region,,,NA,,NA
-2019-03-19T03:34:18.931Z,vleno,Chrome,paste,,VIC,,,,NA,INPUT,text,Address_Region,,,NA,,NA
-2019-03-19T03:34:22.371Z,vleno,Chrome,editField,,,,,,NA,INPUT,text,Address_Region,VIC,,NA,,NA
-2019-03-19T03:34:22.445Z,vleno,Chrome,mouseClick,,,,,DecisionBox,NA,INPUT,checkbox,DecisionBox,on,,TRUE,,NA
-2019-03-19T03:34:22.446Z,vleno,Chrome,editField,,,,,DecisionBox,NA,INPUT,checkbox,DecisionBox,on,,TRUE,,NA
-2019-03-19T03:34:30.655Z,,OS-Clipboard,copy,,3207,,,,NA,,,,,,NA,,NA
-2019-03-19T03:34:32.394Z,vleno,Chrome,mouseClick,,,,,,NA,INPUT,text,Address_ZipCode,,,NA,,NA
-2019-03-19T03:34:32.629Z,vleno,Chrome,paste,,3207,,,,NA,INPUT,text,Address_ZipCode,,,NA,,NA
-2019-03-19T03:34:34.162Z,vleno,Chrome,editField,,,,,,NA,INPUT,text,Address_ZipCode,3207,,NA,,NA
-2019-03-19T03:34:37.706Z,,OS-Clipboard,copy,,Australia,,,,NA,,,,,,NA,,NA
-2019-03-19T03:34:42.363Z,vleno,Chrome,editField,,,,,Address_Country,NA,SELECT,select-one,Address_Country,Australia,,NA,,NA
-2019-03-19T03:34:46.482Z,vleno,Chrome,mouseClick,,,,,,NA,BUTTON,submit,,submit,Submit,NA,,NA
-2019-03-19T03:34:47.616Z,vleno,Chrome,link,https://forms.zohopublic.com/universityofmelbourne/form/NewRecord/formperma/RE682jAqAfIkgTwQyjpvH4PZRbCwMXQN4Wf_RqmB9oM/thankyou,,,,,NA,,,,,,NA,,NA
-2019-03-19T03:34:53.357Z,vleno,Chrome,mouseClick,,,,,,NA,B,,,,Add another response,NA,https://forms.zohopublic.com/universityofmelbourne/form/NewRecord/formperma/RE682jAqAfIkgTwQyjpvH4PZRbCwMXQN4Wf_RqmB9oM,NA
-2019-03-19T03:34:53.682Z,vleno,Chrome,link,https://forms.zohopublic.com/universityofmelbourne/form/NewRecord/formperma/RE682jAqAfIkgTwQyjpvH4PZRbCwMXQN4Wf_RqmB9oM,,,,,NA,,,,,,NA,,NA
-2019-03-19T03:34:58.410Z,vleno,Excel,editCell,,,StudentRecords.xlsx,Sheet2,F5,NA,,,,120 Princes St,,,,
-2019-03-19T03:34:58.411Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet2,A6,NA,,,,Audrey Backer,,NA,,NA
-2019-03-19T03:34:59.026Z,,OS-Clipboard,copy,,Audrey Backer,,,,NA,,,,,,NA,,NA
-2019-03-19T03:35:00.610Z,vleno,Chrome,paste,,Audrey Backer,,,,NA,INPUT,text,Name_First,,,NA,,NA
-2019-03-19T03:35:03.996Z,vleno,Chrome,editField,,,,,,NA,INPUT,text,Name_First,Audrey,,NA,,NA
-2019-03-19T03:35:04.048Z,vleno,Chrome,mouseClick,,,,,,NA,INPUT,text,Name_Last,,,NA,,NA
-2019-03-19T03:35:04.442Z,vleno,Chrome,copy,,,,,,NA,INPUT,text,Name_Last,,,NA,,NA
-2019-03-19T03:35:04.444Z,vleno,Chrome,paste,,Audrey Backer,,,,NA,INPUT,text,Name_Last,,,NA,,NA
-2019-03-19T03:35:08.114Z,vleno,Chrome,editField,,,,,,NA,INPUT,text,Name_Last,Backer,,NA,,NA
-2019-03-19T03:35:10.349Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet2,B6,NA,,,,20/06/1987,,NA,,NA
-2019-03-19T03:35:10.388Z,,OS-Clipboard,copy,,20/06/1987,,,,NA,,,,,,NA,,NA
-2019-03-19T03:35:12.334Z,vleno,Chrome,mouseClick,,,,,Date-date,NA,INPUT,text,date,,,NA,,NA
-2019-03-19T03:35:12.522Z,vleno,Chrome,paste,,20/06/1987,,,Date-date,NA,INPUT,text,date,,,NA,,NA
-2019-03-19T03:35:16.411Z,vleno,Chrome,editField,,,,,Date-date,NA,INPUT,text,date,20-06-1987,,NA,,NA
-2019-03-19T03:35:18.988Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet2,E6,NA,,,,United States,,NA,,NA
-2019-03-19T03:35:19.049Z,,OS-Clipboard,copy,,United States,,,,NA,,,,,,NA,,NA
-2019-03-19T03:35:20.650Z,vleno,Chrome,mouseClick,,,,,,NA,INPUT,text,SingleLine,,,NA,,NA
-2019-03-19T03:35:20.866Z,vleno,Chrome,paste,,United States,,,,NA,INPUT,text,SingleLine,,,NA,,NA
-2019-03-19T03:35:21.578Z,vleno,Chrome,editField,,,,,,NA,INPUT,text,SingleLine,United States,,NA,,NA
-2019-03-19T03:35:25.344Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet2,D6,NA,,,,abacker@gmail.com,,NA,,NA
-2019-03-19T03:35:25.400Z,,OS-Clipboard,copy,,abacker@gmail.com,,,,NA,,,,,,NA,,NA
-2019-03-19T03:35:27.051Z,vleno,Chrome,mouseClick,,,,,,NA,INPUT,text,countrycode,,,NA,,NA
-2019-03-19T03:35:28.596Z,vleno,Chrome,mouseClick,,,,,,NA,INPUT,text,Email,,,NA,,NA
-2019-03-19T03:35:28.787Z,vleno,Chrome,paste,,abacker@gmail.com,,,,NA,INPUT,text,Email,,,NA,,NA
-2019-03-19T03:35:29.186Z,vleno,Chrome,editField,,,,,,NA,INPUT,text,Email,abacker@gmail.com,,NA,,NA
-2019-03-19T03:35:35.165Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet2,C6,NA,,,,+61 519 790 1066,,NA,,NA
-2019-03-19T03:35:35.208Z,,OS-Clipboard,copy,,+61 519 790 1066,,,,NA,,,,,,NA,,NA
-2019-03-19T03:35:36.738Z,vleno,Chrome,mouseClick,,,,,,NA,INPUT,text,countrycode,,,NA,,NA
-2019-03-19T03:35:36.962Z,vleno,Chrome,paste,,+61 519 790 1066,,,,NA,INPUT,text,countrycode,,,NA,,NA
-2019-03-19T03:35:42.130Z,vleno,Chrome,editField,,,,,,NA,INPUT,text,countrycode,519-790-1066,,NA,,NA
-2019-03-19T03:35:45.829Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet2,F6,NA,,,,9/271 William St,,,,
-2019-03-19T03:35:49.554Z,,OS-Clipboard,copy,,9/271 William St,,,,,,,,,,,,
-2019-03-19T03:35:51.355Z,vleno,Chrome,mouseClick,,,,,,NA,INPUT,text,Address_AddressLine1,,,NA,,NA
-2019-03-19T03:35:51.675Z,vleno,Chrome,paste,,9/271 William St,,,,,,,,,,,,
-2019-03-19T03:35:52.034Z,vleno,Chrome,editField,,,,,,NA,INPUT,text,Address_AddressLine1,9/271 William St,,,,
-2019-03-19T03:35:55.907Z,,OS-Clipboard,copy,,Melbourne,,,,NA,,,,,,NA,,NA
-2019-03-19T03:35:57.474Z,vleno,Chrome,mouseClick,,,,,,NA,INPUT,text,Address_City,,,NA,,NA
-2019-03-19T03:35:57.687Z,vleno,Chrome,paste,,Melbourne,,,,NA,INPUT,text,Address_City,,,NA,,NA
-2019-03-19T03:35:58.202Z,vleno,Chrome,editField,,,,,,NA,INPUT,text,Address_City,Melbourne,,NA,,NA
-2019-03-19T03:36:02.097Z,,OS-Clipboard,copy,,VIC,,,,NA,,,,,,NA,,NA
-2019-03-19T03:36:03.634Z,vleno,Chrome,mouseClick,,,,,,NA,INPUT,text,Address_Region,,,NA,,NA
-2019-03-19T03:36:03.901Z,vleno,Chrome,paste,,VIC,,,,NA,INPUT,text,Address_Region,,,NA,,NA
-2019-03-19T03:36:04.194Z,vleno,Chrome,editField,,,,,,NA,INPUT,text,Address_Region,VIC,,NA,,NA
-2019-03-19T03:36:07.253Z,,OS-Clipboard,copy,,3000,,,,NA,,,,,,NA,,NA
-2019-03-19T03:36:08.659Z,vleno,Chrome,mouseClick,,,,,,NA,INPUT,text,Address_ZipCode,,,NA,,NA
-2019-03-19T03:36:08.861Z,vleno,Chrome,paste,,3000,,,,NA,INPUT,text,Address_ZipCode,,,NA,,NA
-2019-03-19T03:36:09.154Z,vleno,Chrome,editField,,,,,,NA,INPUT,text,Address_ZipCode,3000,,NA,,NA
-2019-03-19T03:36:12.246Z,,OS-Clipboard,copy,,Australia,,,,NA,,,,,,NA,,NA
-2019-03-19T03:36:15.354Z,vleno,Chrome,editField,,,,,Address_Country,NA,SELECT,select-one,Address_Country,Australia,,NA,,NA
-2019-03-19T03:36:17.218Z,vleno,Chrome,mouseClick,,,,,DecisionBox,NA,INPUT,checkbox,DecisionBox,on,,TRUE,,NA
-2019-03-19T03:36:17.219Z,vleno,Chrome,editField,,,,,DecisionBox,NA,INPUT,checkbox,DecisionBox,on,,TRUE,,NA
-2019-03-19T03:36:18.482Z,vleno,Chrome,mouseClick,,,,,,NA,BUTTON,submit,,submit,Submit,NA,,NA
-2019-03-19T03:36:19.659Z,vleno,Chrome,link,https://forms.zohopublic.com/universityofmelbourne/form/NewRecord/formperma/RE682jAqAfIkgTwQyjpvH4PZRbCwMXQN4Wf_RqmB9oM/thankyou,,,,,NA,,,,,,NA,,NA
-2019-03-19T03:36:21.629Z,vleno,Chrome,mouseClick,,,,,,NA,B,,,,Add another response,NA,https://forms.zohopublic.com/universityofmelbourne/form/NewRecord/formperma/RE682jAqAfIkgTwQyjpvH4PZRbCwMXQN4Wf_RqmB9oM,NA
-2019-03-19T03:36:21.999Z,vleno,Chrome,link,https://forms.zohopublic.com/universityofmelbourne/form/NewRecord/formperma/RE682jAqAfIkgTwQyjpvH4PZRbCwMXQN4Wf_RqmB9oM,,,,,NA,,,,,,NA,,NA
-2019-03-19T03:36:26.203Z,vleno,Excel,editCell,,,StudentRecords.xlsx,Sheet2,F6,NA,,,,9/271 William St,,,,
-2019-03-19T03:36:26.204Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet2,A7,NA,,,,Carl Gustafsson,,NA,,NA
-2019-03-19T03:36:26.281Z,,OS-Clipboard,copy,,Carl Gustafsson,,,,NA,,,,,,NA,,NA
-2019-03-19T03:36:28.018Z,vleno,Chrome,paste,,Carl Gustafsson,,,,NA,INPUT,text,Name_First,,,NA,,NA
-2019-03-19T03:36:31.596Z,vleno,Chrome,editField,,,,,,NA,INPUT,text,Name_First,Carl,,NA,,NA
-2019-03-19T03:36:31.674Z,vleno,Chrome,mouseClick,,,,,,NA,INPUT,text,Name_Last,,,NA,,NA
-2019-03-19T03:36:32.067Z,vleno,Chrome,paste,,Carl Gustafsson,,,,NA,INPUT,text,Name_Last,,,NA,,NA
-2019-03-19T03:36:34.995Z,vleno,Chrome,editField,,,,,,NA,INPUT,text,Name_Last,Gustafsson,,NA,,NA
-2019-03-19T03:36:37.500Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet2,B7,NA,,,,01/08/1987,,NA,,NA
-2019-03-19T03:36:37.555Z,,OS-Clipboard,copy,,01/08/1987,,,,NA,,,,,,NA,,NA
-2019-03-19T03:36:39.433Z,vleno,Chrome,mouseClick,,,,,Date-date,NA,INPUT,text,date,,,NA,,NA
-2019-03-19T03:36:39.771Z,vleno,Chrome,paste,,01/08/1987,,,Date-date,NA,INPUT,text,date,,,NA,,NA
-2019-03-19T03:36:44.060Z,vleno,Chrome,editField,,,,,Date-date,NA,INPUT,text,date,01-08-1987,,NA,,NA
-2019-03-19T03:36:46.968Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet2,E7,NA,,,,Sweden,,NA,,NA
-2019-03-19T03:36:47.041Z,,OS-Clipboard,copy,,Sweden,,,,NA,,,,,,NA,,NA
-2019-03-19T03:36:49.163Z,vleno,Chrome,mouseClick,,,,,,NA,INPUT,text,SingleLine,,,NA,,NA
-2019-03-19T03:36:49.394Z,vleno,Chrome,paste,,Sweden,,,,NA,INPUT,text,SingleLine,,,NA,,NA
-2019-03-19T03:36:50.978Z,vleno,Chrome,editField,,,,,,NA,INPUT,text,SingleLine,Sweden,,NA,,NA
-2019-03-19T03:36:53.735Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet2,C7,NA,,,,+61 043 587 1823,,NA,,NA
-2019-03-19T03:36:53.797Z,,OS-Clipboard,copy,,+61 043 587 1823,,,,NA,,,,,,NA,,NA
-2019-03-19T03:36:55.617Z,vleno,Chrome,mouseClick,,,,,,NA,INPUT,text,countrycode,,,NA,,NA
-2019-03-19T03:36:55.787Z,vleno,Chrome,paste,,+61 043 587 1823,,,,NA,INPUT,text,countrycode,,,NA,,NA
-2019-03-19T03:37:01.522Z,vleno,Chrome,editField,,,,,,NA,INPUT,text,countrycode,043-587-1823,,NA,,NA
-2019-03-19T03:37:04.420Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet2,D7,NA,,,,cgustafsson@gmail.com,,NA,,NA
-2019-03-19T03:37:04.516Z,,OS-Clipboard,copy,,cgustafsson@gmail.com,,,,NA,,,,,,NA,,NA
-2019-03-19T03:37:06.689Z,vleno,Chrome,mouseClick,,,,,,NA,INPUT,text,Email,,,NA,,NA
-2019-03-19T03:37:07.020Z,vleno,Chrome,paste,,cgustafsson@gmail.com,,,,NA,INPUT,text,Email,,,NA,,NA
-2019-03-19T03:37:07.363Z,vleno,Chrome,editField,,,,,,NA,INPUT,text,Email,cgustafsson@gmail.com,,NA,,NA
-2019-03-19T03:37:10.835Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet2,F7,NA,,,,177 Cecil St,,,,
-2019-03-19T03:37:13.176Z,,OS-Clipboard,copy,,177 Cecil St,,,,,,,,,,,,
-2019-03-19T03:37:14.682Z,vleno,Chrome,mouseClick,,,,,,NA,INPUT,text,Address_AddressLine1,,,NA,,NA
-2019-03-19T03:37:14.938Z,vleno,Chrome,paste,,177 Cecil St,,,,,,,,,,,,
-2019-03-19T03:37:15.186Z,vleno,Chrome,editField,,,,,,NA,INPUT,text,Address_AddressLine1,177 Cecil St,,,,
-2019-03-19T03:37:19.112Z,,OS-Clipboard,copy,,Melbourne,,,,NA,,,,,,NA,,NA
-2019-03-19T03:37:20.986Z,vleno,Chrome,mouseClick,,,,,,NA,INPUT,text,Address_City,,,NA,,NA
-2019-03-19T03:37:21.213Z,vleno,Chrome,paste,,Melbourne,,,,NA,INPUT,text,Address_City,,,NA,,NA
-2019-03-19T03:37:21.579Z,vleno,Chrome,editField,,,,,,NA,INPUT,text,Address_City,Melbourne,,NA,,NA
-2019-03-19T03:37:25.646Z,,OS-Clipboard,copy,,VIC,,,,NA,,,,,,NA,,NA
-2019-03-19T03:37:27.282Z,vleno,Chrome,mouseClick,,,,,,NA,INPUT,text,Address_Region,,,NA,,NA
-2019-03-19T03:37:27.504Z,vleno,Chrome,paste,,VIC,,,,NA,INPUT,text,Address_Region,,,NA,,NA
-2019-03-19T03:37:27.802Z,vleno,Chrome,editField,,,,,,NA,INPUT,text,Address_Region,VIC,,NA,,NA
-2019-03-19T03:37:30.879Z,,OS-Clipboard,copy,,3205,,,,NA,,,,,,NA,,NA
-2019-03-19T03:37:32.321Z,vleno,Chrome,mouseClick,,,,,,NA,INPUT,text,Address_ZipCode,,,NA,,NA
-2019-03-19T03:37:32.604Z,vleno,Chrome,paste,,3205,,,,NA,INPUT,text,Address_ZipCode,,,NA,,NA
-2019-03-19T03:37:33.074Z,vleno,Chrome,editField,,,,,,NA,INPUT,text,Address_ZipCode,3205,,NA,,NA
-2019-03-19T03:37:37.175Z,,OS-Clipboard,copy,,Australia,,,,NA,,,,,,NA,,NA
-2019-03-19T03:37:41.714Z,vleno,Chrome,editField,,,,,Address_Country,NA,SELECT,select-one,Address_Country,Australia,,NA,,NA
-2019-03-19T03:37:43.466Z,vleno,Chrome,mouseClick,,,,,DecisionBox,NA,INPUT,checkbox,DecisionBox,on,,TRUE,,NA
-2019-03-19T03:37:43.467Z,vleno,Chrome,editField,,,,,DecisionBox,NA,INPUT,checkbox,DecisionBox,on,,TRUE,,NA
-2019-03-19T03:37:45.178Z,vleno,Chrome,mouseClick,,,,,,NA,BUTTON,submit,,submit,Submit,NA,,NA
-2019-03-19T03:37:46.273Z,vleno,Chrome,link,https://forms.zohopublic.com/universityofmelbourne/form/NewRecord/formperma/RE682jAqAfIkgTwQyjpvH4PZRbCwMXQN4Wf_RqmB9oM/thankyou,,,,,NA,,,,,,NA,,NA
-2019-03-19T03:37:48.220Z,vleno,Chrome,mouseClick,,,,,,NA,A,,,,Add another response,NA,https://forms.zohopublic.com/universityofmelbourne/form/NewRecord/formperma/RE682jAqAfIkgTwQyjpvH4PZRbCwMXQN4Wf_RqmB9oM,NA
-2019-03-19T03:37:48.554Z,vleno,Chrome,link,https://forms.zohopublic.com/universityofmelbourne/form/NewRecord/formperma/RE682jAqAfIkgTwQyjpvH4PZRbCwMXQN4Wf_RqmB9oM,,,,,NA,,,,,,NA,,NA
-2019-03-19T03:37:52.516Z,vleno,Excel,editCell,,,StudentRecords.xlsx,Sheet2,F7,NA,,,,177 Cecil St,,,,
-2019-03-19T03:37:52.516Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet2,A8,NA,,,,Sarah Johnson,,NA,,NA
-2019-03-19T03:37:52.627Z,,OS-Clipboard,copy,,Sarah Johnson,,,,NA,,,,,,NA,,NA
-2019-03-19T03:37:54.258Z,vleno,Chrome,paste,,Sarah Johnson,,,,NA,INPUT,text,Name_First,,,NA,,NA
-2019-03-19T03:37:56.603Z,vleno,Chrome,editField,,,,,,NA,INPUT,text,Name_First,Sarah,,NA,,NA
-2019-03-19T03:37:56.676Z,vleno,Chrome,mouseClick,,,,,,NA,INPUT,text,Name_Last,,,NA,,NA
-2019-03-19T03:37:57.025Z,vleno,Chrome,paste,,Sarah Johnson,,,,NA,INPUT,text,Name_Last,,,NA,,NA
-2019-03-19T03:37:59.610Z,vleno,Chrome,editField,,,,,,NA,INPUT,text,Name_Last,Johnson,,NA,,NA
-2019-03-19T03:38:03.057Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet2,B8,NA,,,,25/03/1989,,NA,,NA
-2019-03-19T03:38:03.323Z,,OS-Clipboard,copy,,25/03/1989,,,,NA,,,,,,NA,,NA
-2019-03-19T03:38:04.901Z,vleno,Chrome,mouseClick,,,,,Date-date,NA,INPUT,text,date,,,NA,,NA
-2019-03-19T03:38:05.103Z,vleno,Chrome,paste,,25/03/1989,,,Date-date,NA,INPUT,text,date,,,NA,,NA
-2019-03-19T03:38:09.548Z,vleno,Chrome,editField,,,,,Date-date,NA,INPUT,text,date,25-03-1989,,NA,,NA
-2019-03-19T03:38:12.742Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet2,E8,NA,,,,Australia,,NA,,NA
-2019-03-19T03:38:12.797Z,,OS-Clipboard,copy,,Australia,,,,NA,,,,,,NA,,NA
-2019-03-19T03:38:14.329Z,vleno,Chrome,mouseClick,,,,,,NA,INPUT,text,SingleLine,,,NA,,NA
-2019-03-19T03:38:14.621Z,vleno,Chrome,paste,,Australia,,,,NA,INPUT,text,SingleLine,,,NA,,NA
-2019-03-19T03:38:15.018Z,vleno,Chrome,editField,,,,,,NA,INPUT,text,SingleLine,Australia,,NA,,NA
-2019-03-19T03:38:18.003Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet2,C8,NA,,,,+61 035 341 2938,,NA,,NA
-2019-03-19T03:38:18.099Z,,OS-Clipboard,copy,,+61 035 341 2938,,,,NA,,,,,,NA,,NA
-2019-03-19T03:38:19.554Z,vleno,Chrome,mouseClick,,,,,,NA,INPUT,text,countrycode,,,NA,,NA
-2019-03-19T03:38:19.865Z,vleno,Chrome,paste,,+61 035 341 2938,,,,NA,INPUT,text,countrycode,,,NA,,NA
-2019-03-19T03:38:25.866Z,vleno,Chrome,editField,,,,,,NA,INPUT,text,countrycode,035-341-2938,,NA,,NA
-2019-03-19T03:38:28.685Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet2,D8,NA,,,,sjohnson@gmail.com,,NA,,NA
-2019-03-19T03:38:28.748Z,,OS-Clipboard,copy,,sjohnson@gmail.com,,,,NA,,,,,,NA,,NA
-2019-03-19T03:38:30.338Z,vleno,Chrome,mouseClick,,,,,,NA,INPUT,text,Email,,,NA,,NA
-2019-03-19T03:38:30.706Z,vleno,Chrome,paste,,sjohnson@gmail.com,,,,NA,INPUT,text,Email,,,NA,,NA
-2019-03-19T03:38:31.154Z,vleno,Chrome,editField,,,,,,NA,INPUT,text,Email,sjohnson@gmail.com,,NA,,NA
-2019-03-19T03:38:36.982Z,,OS-Clipboard,copy,,225 Abbotsford St,,,,,,,,,,,,
-2019-03-19T03:38:46.930Z,vleno,Chrome,mouseClick,,,,,,NA,INPUT,text,Address_AddressLine1,,,NA,,NA
-2019-03-19T03:38:47.331Z,vleno,Chrome,paste,,225 Abbotsford St,,,,,,,,,,,,
-2019-03-19T03:38:47.746Z,vleno,Chrome,editField,,,,,,NA,INPUT,text,Address_AddressLine1,225 Abbotsford St,,,,
-2019-03-19T03:38:51.360Z,,OS-Clipboard,copy,,Melbourne,,,,NA,,,,,,NA,,NA
-2019-03-19T03:38:53.253Z,vleno,Chrome,mouseClick,,,,,,NA,INPUT,text,Address_City,,,NA,,NA
-2019-03-19T03:38:53.452Z,vleno,Chrome,paste,,Melbourne,,,,NA,INPUT,text,Address_City,,,NA,,NA
-2019-03-19T03:38:53.785Z,vleno,Chrome,editField,,,,,,NA,INPUT,text,Address_City,Melbourne,,NA,,NA
-2019-03-19T03:38:59.294Z,,OS-Clipboard,copy,,VIC,,,,NA,,,,,,NA,,NA
-2019-03-19T03:39:01.849Z,vleno,Chrome,mouseClick,,,,,,NA,INPUT,text,Address_Region,,,NA,,NA
-2019-03-19T03:39:02.554Z,vleno,Chrome,paste,,VIC,,,,NA,INPUT,text,Address_Region,,,NA,,NA
-2019-03-19T03:39:02.873Z,vleno,Chrome,editField,,,,,,NA,INPUT,text,Address_Region,VIC,,NA,,NA
-2019-03-19T03:39:05.849Z,,OS-Clipboard,copy,,3051,,,,NA,,,,,,NA,,NA
-2019-03-19T03:39:07.169Z,vleno,Chrome,mouseClick,,,,,,NA,INPUT,text,Address_ZipCode,,,NA,,NA
-2019-03-19T03:39:07.321Z,vleno,Chrome,paste,,3051,,,,NA,INPUT,text,Address_ZipCode,,,NA,,NA
-2019-03-19T03:39:07.738Z,vleno,Chrome,editField,,,,,,NA,INPUT,text,Address_ZipCode,3051,,NA,,NA
-2019-03-19T03:39:10.293Z,,OS-Clipboard,copy,,Australia,,,,NA,,,,,,NA,,NA
-2019-03-19T03:39:13.938Z,vleno,Chrome,editField,,,,,Address_Country,NA,SELECT,select-one,Address_Country,Australia,,NA,,NA
-2019-03-19T03:39:17.211Z,vleno,Chrome,mouseClick,,,,,,NA,BUTTON,submit,,submit,Submit,NA,,NA
-2019-03-19T03:39:18.373Z,vleno,Chrome,link,https://forms.zohopublic.com/universityofmelbourne/form/NewRecord/formperma/RE682jAqAfIkgTwQyjpvH4PZRbCwMXQN4Wf_RqmB9oM/thankyou,,,,,NA,,,,,,NA,,NA
-2019-03-19T03:39:20.148Z,vleno,Chrome,mouseClick,,,,,,NA,B,,,,Add another response,NA,https://forms.zohopublic.com/universityofmelbourne/form/NewRecord/formperma/RE682jAqAfIkgTwQyjpvH4PZRbCwMXQN4Wf_RqmB9oM,NA
-2019-03-19T03:39:20.508Z,vleno,Chrome,link,https://forms.zohopublic.com/universityofmelbourne/form/NewRecord/formperma/RE682jAqAfIkgTwQyjpvH4PZRbCwMXQN4Wf_RqmB9oM,,,,,NA,,,,,,NA,,NA
-2019-03-19T03:39:24.549Z,vleno,Excel,editCell,,,StudentRecords.xlsx,Sheet2,F8,NA,,,,225 Abbotsford St,,,,
-2019-03-19T03:39:24.549Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet2,A9,NA,,,,Andrea Bolzano,,NA,,NA
-2019-03-19T03:39:24.790Z,,OS-Clipboard,copy,,Andrea Bolzano,,,,NA,,,,,,NA,,NA
-2019-03-19T03:39:28.042Z,vleno,Chrome,paste,,Andrea Bolzano,,,,NA,INPUT,text,Name_First,,,NA,,NA
-2019-03-19T03:39:30.003Z,vleno,Chrome,editField,,,,,,NA,INPUT,text,Name_First,Andrea,,NA,,NA
-2019-03-19T03:39:30.066Z,vleno,Chrome,mouseClick,,,,,,NA,INPUT,text,Name_Last,,,NA,,NA
-2019-03-19T03:39:30.433Z,vleno,Chrome,paste,,Andrea Bolzano,,,,NA,INPUT,text,Name_Last,,,NA,,NA
-2019-03-19T03:39:32.937Z,vleno,Chrome,editField,,,,,,NA,INPUT,text,Name_Last,Bolzano,,NA,,NA
-2019-03-19T03:39:36.523Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet2,B9,NA,,,,22/07/1989,,NA,,NA
-2019-03-19T03:39:36.580Z,,OS-Clipboard,copy,,22/07/1989,,,,NA,,,,,,NA,,NA
-2019-03-19T03:39:39.464Z,vleno,Chrome,mouseClick,,,,,Date-date,NA,INPUT,text,date,,,NA,,NA
-2019-03-19T03:39:39.744Z,vleno,Chrome,paste,,22/07/1989,,,Date-date,NA,INPUT,text,date,,,NA,,NA
-2019-03-19T03:39:43.652Z,vleno,Chrome,editField,,,,,Date-date,NA,INPUT,text,date,22-07-1989,,NA,,NA
-2019-03-19T03:39:46.526Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet2,E9,NA,,,,Italy,,NA,,NA
-2019-03-19T03:39:46.559Z,,OS-Clipboard,copy,,Italy,,,,NA,,,,,,NA,,NA
-2019-03-19T03:39:47.892Z,vleno,Chrome,mouseClick,,,,,,NA,INPUT,text,SingleLine,,,NA,,NA
-2019-03-19T03:39:48.113Z,vleno,Chrome,paste,,Italy,,,,NA,INPUT,text,SingleLine,,,NA,,NA
-2019-03-19T03:39:48.458Z,vleno,Chrome,editField,,,,,,NA,INPUT,text,SingleLine,Italy,,NA,,NA
-2019-03-19T03:39:51.028Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet2,C9,NA,,,,+61 031 023 0066,,NA,,NA
-2019-03-19T03:39:51.094Z,,OS-Clipboard,copy,,+61 031 023 0066,,,,NA,,,,,,NA,,NA
-2019-03-19T03:39:52.921Z,vleno,Chrome,mouseClick,,,,,,NA,INPUT,text,countrycode,,,NA,,NA
-2019-03-19T03:39:53.201Z,vleno,Chrome,paste,,+61 031 023 0066,,,,NA,INPUT,text,countrycode,,,NA,,NA
-2019-03-19T03:39:58.658Z,vleno,Chrome,editField,,,,,,NA,INPUT,text,countrycode,031-023-0066,,NA,,NA
-2019-03-19T03:40:02.677Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet2,D9,NA,,,,abolzano@gmail.com,,NA,,NA
-2019-03-19T03:40:02.755Z,,OS-Clipboard,copy,,abolzano@gmail.com,,,,NA,,,,,,NA,,NA
-2019-03-19T03:40:07.761Z,vleno,Chrome,mouseClick,,,,,,NA,INPUT,text,Email,,,NA,,NA
-2019-03-19T03:40:08.081Z,vleno,Chrome,paste,,abolzano@gmail.com,,,,NA,INPUT,text,Email,,,NA,,NA
-2019-03-19T03:40:08.594Z,vleno,Chrome,editField,,,,,,NA,INPUT,text,Email,abolzano@gmail.com,,NA,,NA
-2019-03-19T03:40:12.508Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet2,F9,NA,,,,463 Victoria St,,,,
-2019-03-19T03:40:15.556Z,,OS-Clipboard,copy,,463 Victoria St,,,,,,,,,,,,
-2019-03-19T03:40:17.585Z,vleno,Chrome,mouseClick,,,,,,NA,INPUT,text,Address_AddressLine1,,,NA,,NA
-2019-03-19T03:40:17.788Z,vleno,Chrome,paste,,463 Victoria St,,,,,,,,,,,,
-2019-03-19T03:40:18.170Z,vleno,Chrome,editField,,,,,,NA,INPUT,text,Address_AddressLine1,463 Victoria St,,,,
-2019-03-19T03:40:21.536Z,,OS-Clipboard,copy,,Melbourne,,,,NA,,,,,,NA,,NA
-2019-03-19T03:40:23.434Z,vleno,Chrome,mouseClick,,,,,,NA,INPUT,text,Address_City,,,NA,,NA
-2019-03-19T03:40:23.674Z,vleno,Chrome,paste,,Melbourne,,,,NA,INPUT,text,Address_City,,,NA,,NA
-2019-03-19T03:40:24.042Z,vleno,Chrome,editField,,,,,,NA,INPUT,text,Address_City,Melbourne,,NA,,NA
-2019-03-19T03:40:27.113Z,,OS-Clipboard,copy,,VIC,,,,NA,,,,,,NA,,NA
-2019-03-19T03:40:28.842Z,vleno,Chrome,mouseClick,,,,,,NA,INPUT,text,Address_Region,,,NA,,NA
-2019-03-19T03:40:29.092Z,vleno,Chrome,paste,,VIC,,,,NA,INPUT,text,Address_Region,,,NA,,NA
-2019-03-19T03:40:29.410Z,vleno,Chrome,editField,,,,,,NA,INPUT,text,Address_Region,VIC,,NA,,NA
-2019-03-19T03:40:32.798Z,,OS-Clipboard,copy,,3003,,,,NA,,,,,,NA,,NA
-2019-03-19T03:40:34.378Z,vleno,Chrome,mouseClick,,,,,,NA,INPUT,text,Address_ZipCode,,,NA,,NA
-2019-03-19T03:40:34.633Z,vleno,Chrome,paste,,3003,,,,NA,INPUT,text,Address_ZipCode,,,NA,,NA
-2019-03-19T03:40:34.994Z,vleno,Chrome,editField,,,,,,NA,INPUT,text,Address_ZipCode,3003,,NA,,NA
-2019-03-19T03:40:37.928Z,,OS-Clipboard,copy,,Australia,,,,NA,,,,,,NA,,NA
-2019-03-19T03:40:41.098Z,vleno,Chrome,editField,,,,,Address_Country,NA,SELECT,select-one,Address_Country,Australia,,NA,,NA
-2019-03-19T03:40:42.817Z,vleno,Chrome,mouseClick,,,,,DecisionBox,NA,INPUT,checkbox,DecisionBox,on,,TRUE,,NA
-2019-03-19T03:40:42.818Z,vleno,Chrome,editField,,,,,DecisionBox,NA,INPUT,checkbox,DecisionBox,on,,TRUE,,NA
-2019-03-19T03:40:44.062Z,vleno,Chrome,mouseClick,,,,,,NA,BUTTON,submit,,submit,Submit,NA,,NA
-2019-03-19T03:40:45.180Z,vleno,Chrome,link,https://forms.zohopublic.com/universityofmelbourne/form/NewRecord/formperma/RE682jAqAfIkgTwQyjpvH4PZRbCwMXQN4Wf_RqmB9oM/thankyou,,,,,NA,,,,,,NA,,NA
-2019-03-19T03:40:47.102Z,vleno,Chrome,mouseClick,,,,,,NA,B,,,,Add another response,NA,https://forms.zohopublic.com/universityofmelbourne/form/NewRecord/formperma/RE682jAqAfIkgTwQyjpvH4PZRbCwMXQN4Wf_RqmB9oM,NA
-2019-03-19T03:40:47.431Z,vleno,Chrome,link,https://forms.zohopublic.com/universityofmelbourne/form/NewRecord/formperma/RE682jAqAfIkgTwQyjpvH4PZRbCwMXQN4Wf_RqmB9oM,,,,,NA,,,,,,NA,,NA
-2019-03-19T03:40:51.667Z,vleno,Excel,editCell,,,StudentRecords.xlsx,Sheet2,F9,NA,,,,463 Victoria St,,,,
-2019-03-19T03:40:51.667Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet2,A10,NA,,,,Hannah Dietmeier,,NA,,NA
-2019-03-19T03:40:52.086Z,,OS-Clipboard,copy,,Hannah Dietmeier,,,,NA,,,,,,NA,,NA
-2019-03-19T03:40:55.401Z,vleno,Chrome,paste,,Hannah Dietmeier,,,,NA,INPUT,text,Name_First,,,NA,,NA
-2019-03-19T03:40:57.477Z,vleno,Chrome,editField,,,,,,NA,INPUT,text,Name_First,Hannah,,NA,,NA
-2019-03-19T03:40:57.548Z,vleno,Chrome,mouseClick,,,,,,NA,INPUT,text,Name_Last,,,NA,,NA
-2019-03-19T03:40:57.986Z,vleno,Chrome,paste,,Hannah Dietmeier,,,,NA,INPUT,text,Name_Last,,,NA,,NA
-2019-03-19T03:41:00.714Z,vleno,Chrome,editField,,,,,,NA,INPUT,text,Name_Last,Dietmeier,,NA,,NA
-2019-03-19T03:41:14.642Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet2,B10,NA,,,,12/07/1990,,NA,,NA
-2019-03-19T03:41:14.778Z,,OS-Clipboard,copy,,12/07/1990,,,,NA,,,,,,NA,,NA
-2019-03-19T03:41:16.587Z,vleno,Chrome,mouseClick,,,,,Date-date,NA,INPUT,text,date,,,NA,,NA
-2019-03-19T03:41:16.890Z,vleno,Chrome,paste,,12/07/1990,,,Date-date,NA,INPUT,text,date,,,NA,,NA
-2019-03-19T03:41:20.687Z,vleno,Chrome,editField,,,,,Date-date,NA,INPUT,text,date,12-07-1990,,NA,,NA
-2019-03-19T03:41:23.682Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet2,E10,NA,,,,Germany,,NA,,NA
-2019-03-19T03:41:23.933Z,,OS-Clipboard,copy,,Germany,,,,NA,,,,,,NA,,NA
-2019-03-19T03:41:25.849Z,vleno,Chrome,mouseClick,,,,,,NA,INPUT,text,SingleLine,,,NA,,NA
-2019-03-19T03:41:26.378Z,vleno,Chrome,paste,,Germany,,,,NA,INPUT,text,SingleLine,,,NA,,NA
-2019-03-19T03:41:26.794Z,vleno,Chrome,editField,,,,,,NA,INPUT,text,SingleLine,Germany,,NA,,NA
-2019-03-19T03:41:29.506Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet2,C10,NA,,,,+61 072 237 8681,,NA,,NA
-2019-03-19T03:41:30.214Z,,OS-Clipboard,copy,,+61 072 237 8681,,,,NA,,,,,,NA,,NA
-2019-03-19T03:41:31.754Z,vleno,Chrome,mouseClick,,,,,,NA,INPUT,text,countrycode,,,NA,,NA
-2019-03-19T03:41:31.929Z,vleno,Chrome,paste,,+61 072 237 8681,,,,NA,INPUT,text,countrycode,,,NA,,NA
-2019-03-19T03:41:36.923Z,vleno,Chrome,editField,,,,,,NA,INPUT,text,countrycode,072-237-8681,,NA,,NA
-2019-03-19T03:41:40.093Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet2,D10,NA,,,,hdietmeier@gmail.com,,NA,,NA
-2019-03-19T03:41:40.174Z,,OS-Clipboard,copy,,hdietmeier@gmail.com,,,,NA,,,,,,NA,,NA
-2019-03-19T03:41:41.641Z,vleno,Chrome,mouseClick,,,,,,NA,INPUT,text,Email,,,NA,,NA
-2019-03-19T03:41:41.881Z,vleno,Chrome,paste,,hdietmeier@gmail.com,,,,NA,INPUT,text,Email,,,NA,,NA
-2019-03-19T03:41:42.875Z,vleno,Chrome,editField,,,,,,NA,INPUT,text,Email,hdietmeier@gmail.com,,NA,,NA
-2019-03-19T03:41:45.861Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet2,F10,NA,,,,149 Alfred St,,,,
-2019-03-19T03:41:48.188Z,,OS-Clipboard,copy,,149 Alfred St,,,,,,,,,,,,
-2019-03-19T03:41:49.873Z,vleno,Chrome,mouseClick,,,,,,NA,INPUT,text,Address_AddressLine1,,,NA,,NA
-2019-03-19T03:41:50.089Z,vleno,Chrome,paste,,149 Alfred St,,,,,,,,,,,,
-2019-03-19T03:41:50.993Z,vleno,Chrome,editField,,,,,,NA,INPUT,text,Address_AddressLine1,149 Alfred St,,,,
-2019-03-19T03:41:54.209Z,,OS-Clipboard,copy,,Melbourne,,,,NA,,,,,,NA,,NA
-2019-03-19T03:41:55.746Z,vleno,Chrome,mouseClick,,,,,,NA,INPUT,text,Address_City,,,NA,,NA
-2019-03-19T03:41:55.927Z,vleno,Chrome,paste,,Melbourne,,,,NA,INPUT,text,Address_City,,,NA,,NA
-2019-03-19T03:41:56.306Z,vleno,Chrome,editField,,,,,,NA,INPUT,text,Address_City,Melbourne,,NA,,NA
-2019-03-19T03:42:00.855Z,,OS-Clipboard,copy,,VIC,,,,NA,,,,,,NA,,NA
-2019-03-19T03:42:02.521Z,vleno,Chrome,mouseClick,,,,,,NA,INPUT,text,Address_Region,,,NA,,NA
-2019-03-19T03:42:02.707Z,vleno,Chrome,paste,,VIC,,,,NA,INPUT,text,Address_Region,,,NA,,NA
-2019-03-19T03:42:03.098Z,vleno,Chrome,editField,,,,,,NA,INPUT,text,Address_Region,VIC,,NA,,NA
-2019-03-19T03:42:08.619Z,,OS-Clipboard,copy,,3051,,,,NA,,,,,,NA,,NA
-2019-03-19T03:42:10.273Z,vleno,Chrome,mouseClick,,,,,,NA,INPUT,text,Address_ZipCode,,,NA,,NA
-2019-03-19T03:42:10.410Z,vleno,Chrome,paste,,3051,,,,NA,INPUT,text,Address_ZipCode,,,NA,,NA
-2019-03-19T03:42:11.003Z,vleno,Chrome,editField,,,,,,NA,INPUT,text,Address_ZipCode,3051,,NA,,NA
-2019-03-19T03:42:13.315Z,,OS-Clipboard,copy,,Australia,,,,NA,,,,,,NA,,NA
-2019-03-19T03:42:17.074Z,vleno,Chrome,editField,,,,,Address_Country,NA,SELECT,select-one,Address_Country,Australia,,NA,,NA
-2019-03-19T03:42:18.450Z,vleno,Chrome,mouseClick,,,,,DecisionBox,NA,INPUT,checkbox,DecisionBox,on,,TRUE,,NA
-2019-03-19T03:42:18.451Z,vleno,Chrome,editField,,,,,DecisionBox,NA,INPUT,checkbox,DecisionBox,on,,TRUE,,NA
-2019-03-19T03:42:19.996Z,vleno,Chrome,mouseClick,,,,,,NA,BUTTON,submit,,submit,Submit,NA,,NA
-2019-03-19T03:42:21.117Z,vleno,Chrome,link,https://forms.zohopublic.com/universityofmelbourne/form/NewRecord/formperma/RE682jAqAfIkgTwQyjpvH4PZRbCwMXQN4Wf_RqmB9oM/thankyou,,,,,NA,,,,,,NA,,NA
-2019-03-19T03:42:27.084Z,vleno,Chrome,mouseClick,,,,,,NA,B,,,,Add another response,NA,https://forms.zohopublic.com/universityofmelbourne/form/NewRecord/formperma/RE682jAqAfIkgTwQyjpvH4PZRbCwMXQN4Wf_RqmB9oM,NA
-2019-03-19T03:42:27.416Z,vleno,Chrome,link,https://forms.zohopublic.com/universityofmelbourne/form/NewRecord/formperma/RE682jAqAfIkgTwQyjpvH4PZRbCwMXQN4Wf_RqmB9oM,,,,,NA,,,,,,NA,,NA
-2019-03-19T03:42:33.943Z,vleno,Excel,editCell,,,StudentRecords.xlsx,Sheet2,F10,NA,,,,149 Alfred St,,,,
-2019-03-19T03:42:33.944Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet2,A11,NA,,,,Igor Honchar,,NA,,NA
-2019-03-19T03:42:34.474Z,,OS-Clipboard,copy,,Igor Honchar,,,,NA,,,,,,NA,,NA
-2019-03-19T03:42:36.020Z,vleno,Chrome,paste,,Igor Honchar,,,,NA,INPUT,text,Name_First,,,NA,,NA
-2019-03-19T03:42:38.956Z,vleno,Chrome,editField,,,,,,NA,INPUT,text,Name_First,Igor,,NA,,NA
-2019-03-19T03:42:39.033Z,vleno,Chrome,mouseClick,,,,,,NA,INPUT,text,Name_Last,,,NA,,NA
-2019-03-19T03:42:39.329Z,vleno,Chrome,copy,,,,,,NA,INPUT,text,Name_Last,,,NA,,NA
-2019-03-19T03:42:39.331Z,vleno,Chrome,paste,,Igor Honchar,,,,NA,INPUT,text,Name_Last,,,NA,,NA
-2019-03-19T03:42:42.362Z,vleno,Chrome,editField,,,,,,NA,INPUT,text,Name_Last,Honchar,,NA,,NA
-2019-03-19T03:42:45.461Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet2,B11,NA,,,,28/03/1992,,NA,,NA
-2019-03-19T03:42:45.540Z,,OS-Clipboard,copy,,28/03/1992,,,,NA,,,,,,NA,,NA
-2019-03-19T03:42:46.979Z,vleno,Chrome,mouseClick,,,,,Date-date,NA,INPUT,text,date,,,NA,,NA
-2019-03-19T03:42:47.178Z,vleno,Chrome,paste,,28/03/1992,,,Date-date,NA,INPUT,text,date,,,NA,,NA
-2019-03-19T03:42:50.908Z,vleno,Chrome,editField,,,,,Date-date,NA,INPUT,text,date,28-03-1992,,NA,,NA
-2019-03-19T03:42:54.670Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet2,E11,NA,,,,Ukraine,,NA,,NA
-2019-03-19T03:42:54.822Z,,OS-Clipboard,copy,,Ukraine,,,,NA,,,,,,NA,,NA
-2019-03-19T03:42:56.713Z,vleno,Chrome,mouseClick,,,,,,NA,INPUT,text,SingleLine,,,NA,,NA
-2019-03-19T03:42:56.865Z,vleno,Chrome,paste,,Ukraine,,,,NA,INPUT,text,SingleLine,,,NA,,NA
-2019-03-19T03:42:57.290Z,vleno,Chrome,editField,,,,,,NA,INPUT,text,SingleLine,Ukraine,,NA,,NA
-2019-03-19T03:43:00.285Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet2,C11,NA,,,,+61 096 826 1262,,NA,,NA
-2019-03-19T03:43:00.365Z,,OS-Clipboard,copy,,+61 096 826 1262,,,,NA,,,,,,NA,,NA
-2019-03-19T03:43:02.106Z,vleno,Chrome,mouseClick,,,,,,NA,INPUT,text,countrycode,,,NA,,NA
-2019-03-19T03:43:02.266Z,vleno,Chrome,paste,,+61 096 826 1262,,,,NA,INPUT,text,countrycode,,,NA,,NA
-2019-03-19T03:43:07.458Z,vleno,Chrome,editField,,,,,,NA,INPUT,text,countrycode,096-826-1262,,NA,,NA
-2019-03-19T03:43:09.885Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet2,D11,NA,,,,ihonchar@gmail.com,,NA,,NA
-2019-03-19T03:43:09.961Z,,OS-Clipboard,copy,,ihonchar@gmail.com,,,,NA,,,,,,NA,,NA
-2019-03-19T03:43:11.148Z,vleno,Chrome,mouseClick,,,,,,NA,INPUT,text,Email,,,NA,,NA
-2019-03-19T03:43:11.397Z,vleno,Chrome,paste,,ihonchar@gmail.com,,,,NA,INPUT,text,Email,,,NA,,NA
-2019-03-19T03:43:11.769Z,vleno,Chrome,editField,,,,,,NA,INPUT,text,Email,ihonchar@gmail.com,,NA,,NA
-2019-03-19T03:43:15.128Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet2,F11,NA,,,,12 Hotham St,,,,
-2019-03-19T03:43:17.740Z,,OS-Clipboard,copy,,12 Hotham St,,,,,,,,,,,,
-2019-03-19T03:43:19.204Z,vleno,Chrome,mouseClick,,,,,,NA,INPUT,text,Address_AddressLine1,,,NA,,NA
-2019-03-19T03:43:19.378Z,vleno,Chrome,paste,,12 Hotham St,,,,,,,,,,,,
-2019-03-19T03:43:19.649Z,vleno,Chrome,editField,,,,,,NA,INPUT,text,Address_AddressLine1,12 Hotham St,,,,
-2019-03-19T03:43:23.172Z,,OS-Clipboard,copy,,Melbourne,,,,NA,,,,,,NA,,NA
-2019-03-19T03:43:24.594Z,vleno,Chrome,mouseClick,,,,,,NA,INPUT,text,Address_City,,,NA,,NA
-2019-03-19T03:43:24.773Z,vleno,Chrome,paste,,Melbourne,,,,NA,INPUT,text,Address_City,,,NA,,NA
-2019-03-19T03:43:25.145Z,vleno,Chrome,editField,,,,,,NA,INPUT,text,Address_City,Melbourne,,NA,,NA
-2019-03-19T03:43:29.070Z,,OS-Clipboard,copy,,VIC,,,,NA,,,,,,NA,,NA
-2019-03-19T03:43:30.721Z,vleno,Chrome,mouseClick,,,,,,NA,INPUT,text,Address_Region,,,NA,,NA
-2019-03-19T03:43:30.906Z,vleno,Chrome,paste,,VIC,,,,NA,INPUT,text,Address_Region,,,NA,,NA
-2019-03-19T03:43:31.265Z,vleno,Chrome,editField,,,,,,NA,INPUT,text,Address_Region,VIC,,NA,,NA
-2019-03-19T03:43:34.126Z,,OS-Clipboard,copy,,3205,,,,NA,,,,,,NA,,NA
-2019-03-19T03:43:35.946Z,vleno,Chrome,mouseClick,,,,,,NA,INPUT,text,Address_ZipCode,,,NA,,NA
-2019-03-19T03:43:36.154Z,vleno,Chrome,paste,,3205,,,,NA,INPUT,text,Address_ZipCode,,,NA,,NA
-2019-03-19T03:43:36.457Z,vleno,Chrome,editField,,,,,,NA,INPUT,text,Address_ZipCode,3205,,NA,,NA
-2019-03-19T03:43:39.072Z,,OS-Clipboard,copy,,Australia,,,,NA,,,,,,NA,,NA
-2019-03-19T03:43:42.081Z,vleno,Chrome,editField,,,,,Address_Country,NA,SELECT,select-one,Address_Country,Australia,,NA,,NA
-2019-03-19T03:43:44.041Z,vleno,Chrome,mouseClick,,,,,DecisionBox,NA,INPUT,checkbox,DecisionBox,on,,TRUE,,NA
-2019-03-19T03:43:44.042Z,vleno,Chrome,editField,,,,,DecisionBox,NA,INPUT,checkbox,DecisionBox,on,,TRUE,,NA
-2019-03-19T03:43:45.638Z,vleno,Chrome,mouseClick,,,,,,NA,BUTTON,submit,,submit,Submit,NA,,NA
-2019-03-19T03:43:46.763Z,vleno,Chrome,link,https://forms.zohopublic.com/universityofmelbourne/form/NewRecord/formperma/RE682jAqAfIkgTwQyjpvH4PZRbCwMXQN4Wf_RqmB9oM/thankyou,,,,,NA,,,,,,NA,,NA
+timeStamp,userID,targetApp,eventType,url,content,target.workbookName,target.sheetName,target.id,target.className,target.tagName,target.type,target.name,target.value,target.innerText,target.checked,target.href,target.option,target.title,target.innerHTML
+2019-09-17T02:18:39.684Z,vleno,Chrome,navigate_to,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,,,,,,,,,,
+2019-09-17T02:18:45.260Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet1,A2,,,,,John Doe,,,,,,
+2019-09-17T02:18:46.109Z,,OS-Clipboard,copy,,John Doe,,,,,,,,,,,,,,
+2019-09-17T02:18:48.520Z,vleno,Chrome,clickTextField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Name_First,,,,,,,
+2019-09-17T02:18:49.000Z,vleno,Chrome,paste,https://forms.zoho.com/universityofmelbourne/form/NewRecord,John Doe,,,,,INPUT,text,Name_First,,,,,,,
+2019-09-17T02:18:50.777Z,vleno,Chrome,editField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Name_First,John,,,,,,
+2019-09-17T02:18:50.887Z,vleno,Chrome,clickTextField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Name_Last,,,,,,,
+2019-09-17T02:18:51.375Z,vleno,Chrome,paste,https://forms.zoho.com/universityofmelbourne/form/NewRecord,John Doe,,,,,INPUT,text,Name_Last,,,,,,,
+2019-09-17T02:18:53.784Z,vleno,Chrome,editField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Name_Last,Doe,,,,,,
+2019-09-17T02:18:57.766Z,,OS-Clipboard,copy,,11/03/1986,,,,,,,,,,,,,,
+2019-09-17T02:19:00.156Z,vleno,Chrome,clickTextField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,Date-date,hasDatepicker,INPUT,text,date,,,,,,,
+2019-09-17T02:19:00.698Z,vleno,Chrome,paste,https://forms.zoho.com/universityofmelbourne/form/NewRecord,11/03/1986,,,Date-date,hasDatepicker,INPUT,text,date,,,,,,,
+2019-09-17T02:19:07.492Z,vleno,Chrome,editField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,Date-date,hasDatepicker,INPUT,text,date,11-03-1986,,,,,,
+2019-09-17T02:18:57.715Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet1,B2,,,,,11/03/1986,,,,,,
+2019-09-17T02:19:14.921Z,,OS-Clipboard,copy,,+61 039 689 9324,,,,,,,,,,,,,,
+2019-09-17T02:19:19.984Z,vleno,Chrome,clickTextField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,PhoneNumber,,INPUT,text,countrycode,,,,,,,
+2019-09-17T02:19:20.496Z,vleno,Chrome,paste,https://forms.zoho.com/universityofmelbourne/form/NewRecord,+61 039 689 9324,,,PhoneNumber,,INPUT,text,countrycode,,,,,,,
+2019-09-17T02:19:28.402Z,vleno,Chrome,editField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,PhoneNumber,,INPUT,text,countrycode,039-689-9324,,,,,,
+2019-09-17T02:19:14.833Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet1,C2,,,,,+61 039 689 9324,,,,,,
+2019-09-17T02:19:34.053Z,,OS-Clipboard,copy,,Australia,,,,,,,,,,,,,,
+2019-09-17T02:19:33.949Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet1,E2,,,,,Australia,,,,,,
+2019-09-17T02:19:37.775Z,vleno,Chrome,clickTextField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,SingleLine,,,,,,,
+2019-09-17T02:19:38.152Z,vleno,Chrome,paste,https://forms.zoho.com/universityofmelbourne/form/NewRecord,Australia,,,,,INPUT,text,SingleLine,,,,,,,
+2019-09-17T02:19:39.273Z,vleno,Chrome,editField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,SingleLine,Australia,,,,,,
+2019-09-17T02:19:42.820Z,,OS-Clipboard,copy,,jdoe@gmail.com,,,,,,,,,,,,,,
+2019-09-17T02:19:46.143Z,vleno,Chrome,clickTextField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Email,,,,,,,
+2019-09-17T02:19:46.896Z,vleno,Chrome,paste,https://forms.zoho.com/universityofmelbourne/form/NewRecord,jdoe@gmail.com,,,,,INPUT,text,Email,,,,,,,
+2019-09-17T02:19:48.473Z,vleno,Chrome,editField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Email,jdoe@gmail.com,,,,,,
+2019-09-17T02:19:42.733Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet1,D2,,,,,jdoe@gmail.com,,,,,,
+2019-09-17T02:20:14.725Z,,OS-Clipboard,copy,,122 Albert St,,,,,,,,,,,,,,
+2019-09-17T02:20:29.975Z,vleno,Chrome,clickTextField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Address_AddressLine1,,,,,,,
+2019-09-17T02:20:30.448Z,vleno,Chrome,paste,https://forms.zoho.com/universityofmelbourne/form/NewRecord,122 Albert St,,,,,INPUT,text,Address_AddressLine1,,,,,,,
+2019-09-17T02:20:31.537Z,vleno,Chrome,editField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Address_AddressLine1,122 Albert St,,,,,,
+2019-09-17T02:20:52.675Z,,OS-Clipboard,copy,,122 Albert St, Port Melbourne, VIC 3207, Australia,,,,,,,,,,,,,,
+2019-09-17T02:20:52.631Z,vleno,Excel,editCell,,,StudentRecords.xlsx,Sheet1,F2,,,,,122 Albert St, Port Melbourne, VIC 3207, Australia,,,,,,
+2019-09-17T02:20:52.632Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet1,F1,,,,,Address,,,,,,
+2019-09-17T02:20:52.637Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet1,F2,,,,,122 Albert St, Port Melbourne, VIC 3207, Australia,,,,,,
+2019-09-17T02:21:02.167Z,vleno,Chrome,clickTextField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Address_AddressLine1,122 Albert St,,,,,,
+2019-09-17T02:21:04.528Z,vleno,Chrome,paste,https://forms.zoho.com/universityofmelbourne/form/NewRecord,122 Albert St, Port Melbourne, VIC 3207, Australia,,,,,INPUT,text,Address_AddressLine1,,,,,,,
+2019-09-17T02:21:10.816Z,vleno,Chrome,clickTextField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Address_City,,,,,,,
+2019-09-17T02:21:11.167Z,vleno,Chrome,paste,https://forms.zoho.com/universityofmelbourne/form/NewRecord,122 Albert St, Port Melbourne, VIC 3207, Australia,,,,,INPUT,text,Address_City,,,,,,,
+2019-09-17T02:21:20.170Z,vleno,Chrome,editField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Address_City,Port Melbourne,,,,,,
+2019-09-17T02:21:20.271Z,vleno,Chrome,clickTextField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Address_Region,,,,,,,
+2019-09-17T02:21:20.936Z,vleno,Chrome,paste,https://forms.zoho.com/universityofmelbourne/form/NewRecord,122 Albert St, Port Melbourne, VIC 3207, Australia,,,,,INPUT,text,Address_Region,,,,,,,
+2019-09-17T02:21:28.168Z,vleno,Chrome,editField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Address_Region,VIC,,,,,,
+2019-09-17T02:21:28.239Z,vleno,Chrome,clickTextField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Address_ZipCode,,,,,,,
+2019-09-17T02:21:29.192Z,vleno,Chrome,paste,https://forms.zoho.com/universityofmelbourne/form/NewRecord,122 Albert St, Port Melbourne, VIC 3207, Australia,,,,,INPUT,text,Address_ZipCode,,,,,,,
+2019-09-17T02:21:36.377Z,vleno,Chrome,editField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Address_ZipCode,3207,,,,,,
+2019-09-17T02:21:59.669Z,vleno,Chrome,clickButton,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,fmSmtButton submitColor disabledSubmitButtom,BUTTON,submit,,submit,Submit,,,,,\n<em>Submit</em>\n
+2019-09-17T02:22:09.592Z,vleno,Chrome,clickLink,https://forms.zoho.com/universityofmelbourne/form/NewRecord/thankyou,,,,,,A,,,,Add another response.,,/universityofmelbourne/form/NewRecord,,, \n<em class=\liveAddIcon flLeft\></em>\n<b>Add another response.</b>\n<div class=\clearBoth\></div>
+2019-09-17T02:22:14.950Z,,OS-Clipboard,copy,,Albert Rauf,,,,,,,,,,,,,,
+2019-09-17T02:22:17.455Z,vleno,Chrome,clickTextField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Name_First,,,,,,,
+2019-09-17T02:22:17.783Z,vleno,Chrome,paste,https://forms.zoho.com/universityofmelbourne/form/NewRecord,Albert Rauf,,,,,INPUT,text,Name_First,,,,,,,
+2019-09-17T02:22:19.856Z,vleno,Chrome,editField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Name_First,Albert,,,,,,
+2019-09-17T02:22:19.927Z,vleno,Chrome,clickTextField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Name_Last,,,,,,,
+2019-09-17T02:22:20.233Z,vleno,Chrome,paste,https://forms.zoho.com/universityofmelbourne/form/NewRecord,Albert Rauf,,,,,INPUT,text,Name_Last,,,,,,,
+2019-09-17T02:22:23.136Z,vleno,Chrome,editField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Name_Last,Rauf,,,,,,
+2019-09-17T02:22:14.869Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet1,A3,,,,,Albert Rauf,,,,,,
+2019-09-17T02:22:43.126Z,,OS-Clipboard,copy,,11/04/1986,,,,,,,,,,,,,,
+2019-09-17T02:22:47.026Z,vleno,Chrome,clickTextField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,Date-date,hasDatepicker,INPUT,text,date,,,,,,,
+2019-09-17T02:22:47.255Z,vleno,Chrome,paste,https://forms.zoho.com/universityofmelbourne/form/NewRecord,11/04/1986,,,Date-date,hasDatepicker,INPUT,text,date,,,,,,,
+2019-09-17T02:22:53.547Z,vleno,Chrome,editField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,Date-date,hasDatepicker,INPUT,text,date,11-04-1986,,,,,,
+2019-09-17T02:22:58.484Z,,OS-Clipboard,copy,,Germany,,,,,,,,,,,,,,
+2019-09-17T02:22:43.044Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet1,B3,,,,,11/04/1986,,,,,,
+2019-09-17T02:22:58.437Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet1,E3,,,,,Germany,,,,,,
+2019-09-17T02:23:02.471Z,vleno,Chrome,clickTextField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,SingleLine,,,,,,,
+2019-09-17T02:23:02.959Z,vleno,Chrome,paste,https://forms.zoho.com/universityofmelbourne/form/NewRecord,Germany,,,,,INPUT,text,SingleLine,,,,,,,
+2019-09-17T02:23:03.712Z,vleno,Chrome,editField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,SingleLine,Germany,,,,,,
+2019-09-17T02:23:06.716Z,,OS-Clipboard,copy,,+61 043 512 4834,,,,,,,,,,,,,,
+2019-09-17T02:23:08.647Z,vleno,Chrome,clickTextField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,PhoneNumber,,INPUT,text,countrycode,,,,,,,
+2019-09-17T02:23:08.991Z,vleno,Chrome,paste,https://forms.zoho.com/universityofmelbourne/form/NewRecord,+61 043 512 4834,,,PhoneNumber,,INPUT,text,countrycode,,,,,,,
+2019-09-17T02:23:14.632Z,vleno,Chrome,editField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,PhoneNumber,,INPUT,text,countrycode,043-512-4834,,,,,,
+2019-09-17T02:23:17.570Z,,OS-Clipboard,copy,,arauf@gmail.com,,,,,,,,,,,,,,
+2019-09-17T02:23:06.627Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet1,C3,,,,,+61 043 512 4834,,,,,,
+2019-09-17T02:23:17.490Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet1,D3,,,,,arauf@gmail.com,,,,,,
+2019-09-17T02:23:19.383Z,vleno,Chrome,clickTextField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Email,,,,,,,
+2019-09-17T02:23:19.695Z,vleno,Chrome,paste,https://forms.zoho.com/universityofmelbourne/form/NewRecord,arauf@gmail.com,,,,,INPUT,text,Email,,,,,,,
+2019-09-17T02:23:20.616Z,vleno,Chrome,editField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Email,arauf@gmail.com,,,,,,
+2019-09-17T02:23:25.906Z,,OS-Clipboard,copy,,99 Beacon Rd, Port Melbourne, VIC 3207, Australia,,,,,,,,,,,,,,
+2019-09-17T02:23:27.991Z,vleno,Chrome,clickTextField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Address_AddressLine1,,,,,,,
+2019-09-17T02:23:28.327Z,vleno,Chrome,paste,https://forms.zoho.com/universityofmelbourne/form/NewRecord,99 Beacon Rd, Port Melbourne, VIC 3207, Australia,,,,,INPUT,text,Address_AddressLine1,,,,,,,
+2019-09-17T02:23:34.176Z,vleno,Chrome,editField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Address_AddressLine1,99 Beacon Rd,,,,,,
+2019-09-17T02:23:34.231Z,vleno,Chrome,clickTextField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Address_City,,,,,,,
+2019-09-17T02:23:34.615Z,vleno,Chrome,paste,https://forms.zoho.com/universityofmelbourne/form/NewRecord,99 Beacon Rd, Port Melbourne, VIC 3207, Australia,,,,,INPUT,text,Address_City,,,,,,,
+2019-09-17T02:23:42.801Z,vleno,Chrome,editField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Address_City,Port Melbourne,,,,,,
+2019-09-17T02:23:42.887Z,vleno,Chrome,clickTextField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Address_Region,,,,,,,
+2019-09-17T02:23:43.263Z,vleno,Chrome,paste,https://forms.zoho.com/universityofmelbourne/form/NewRecord,99 Beacon Rd, Port Melbourne, VIC 3207, Australia,,,,,INPUT,text,Address_Region,,,,,,,
+2019-09-17T02:23:49.129Z,vleno,Chrome,editField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Address_Region,VIC,,,,,,
+2019-09-17T02:23:49.191Z,vleno,Chrome,clickTextField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Address_ZipCode,,,,,,,
+2019-09-17T02:23:49.807Z,vleno,Chrome,paste,https://forms.zoho.com/universityofmelbourne/form/NewRecord,99 Beacon Rd, Port Melbourne, VIC 3207, Australia,,,,,INPUT,text,Address_ZipCode,,,,,,,
+2019-09-17T02:23:49.862Z,,OS-Clipboard,copy,,99 Beacon Rd, Port Melbourne, VIC 3207, Australia,,,,,,,,,,,,,,
+2019-09-17T02:23:58.642Z,vleno,Chrome,editField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Address_ZipCode,3207,,,,,,
+2019-09-17T02:24:11.623Z,vleno,Chrome,clickCheckbox,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,DecisionBox,,INPUT,checkbox,DecisionBox,on,,true,,,,
+2019-09-17T02:24:11.625Z,vleno,Chrome,editField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,DecisionBox,,INPUT,checkbox,DecisionBox,on,,true,,,,
+2019-09-17T02:24:13.867Z,vleno,Chrome,clickButton,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,fmSmtButton submitColor disabledSubmitButtom,BUTTON,submit,,submit,Submit,,,,,\n<em>Submit</em>\n
+2019-09-17T02:24:17.288Z,vleno,Chrome,clickLink,https://forms.zoho.com/universityofmelbourne/form/NewRecord/thankyou,,,,,,A,,,,Add another response.,,/universityofmelbourne/form/NewRecord,,, \n<em class=\liveAddIcon flLeft\></em>\n<b>Add another response.</b>\n<div class=\clearBoth\></div>
+2019-09-17T02:23:25.804Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet1,F3,,,,,99 Beacon Rd, Port Melbourne, VIC 3207, Australia,,,,,,
+2019-09-17T02:24:22.948Z,,OS-Clipboard,copy,,Steven Richards,,,,,,,,,,,,,,
+2019-09-17T02:24:22.856Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet1,A4,,,,,Steven Richards,,,,,,
+2019-09-17T02:24:25.207Z,vleno,Chrome,clickTextField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Name_First,,,,,,,
+2019-09-17T02:24:25.527Z,vleno,Chrome,paste,https://forms.zoho.com/universityofmelbourne/form/NewRecord,Steven Richards,,,,,INPUT,text,Name_First,,,,,,,
+2019-09-17T02:24:28.082Z,vleno,Chrome,editField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Name_First,Steven,,,,,,
+2019-09-17T02:24:28.167Z,vleno,Chrome,clickTextField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Name_Last,,,,,,,
+2019-09-17T02:24:29.023Z,vleno,Chrome,paste,https://forms.zoho.com/universityofmelbourne/form/NewRecord,Steven Richards,,,,,INPUT,text,Name_Last,,,,,,,
+2019-09-17T02:24:31.976Z,vleno,Chrome,editField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Name_Last,Richards,,,,,,
+2019-09-17T02:24:35.425Z,,OS-Clipboard,copy,,18/06/1986,,,,,,,,,,,,,,
+2019-09-17T02:24:37.123Z,vleno,Chrome,clickTextField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,Date-date,hasDatepicker,INPUT,text,date,,,,,,,
+2019-09-17T02:24:37.367Z,vleno,Chrome,paste,https://forms.zoho.com/universityofmelbourne/form/NewRecord,18/06/1986,,,Date-date,hasDatepicker,INPUT,text,date,,,,,,,
+2019-09-17T02:24:41.531Z,vleno,Chrome,editField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,Date-date,hasDatepicker,INPUT,text,date,18-06-1986,,,,,,
+2019-09-17T02:24:35.345Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet1,B4,,,,,18/06/1986,,,,,,
+2019-09-17T02:24:44.516Z,,OS-Clipboard,copy,,+61 035 376 0669,,,,,,,,,,,,,,
+2019-09-17T02:24:44.397Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet1,C4,,,,,+61 035 376 0669,,,,,,
+2019-09-17T02:24:46.615Z,vleno,Chrome,clickTextField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,PhoneNumber,,INPUT,text,countrycode,,,,,,,
+2019-09-17T02:24:46.847Z,vleno,Chrome,paste,https://forms.zoho.com/universityofmelbourne/form/NewRecord,+61 035 376 0669,,,PhoneNumber,,INPUT,text,countrycode,,,,,,,
+2019-09-17T02:24:52.433Z,vleno,Chrome,editField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,PhoneNumber,,INPUT,text,countrycode,035-376-0669,,,,,,
+2019-09-17T02:24:59.482Z,,OS-Clipboard,copy,,Australia,,,,,,,,,,,,,,
+2019-09-17T02:25:01.319Z,vleno,Chrome,clickTextField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,SingleLine,,,,,,,
+2019-09-17T02:25:01.639Z,vleno,Chrome,paste,https://forms.zoho.com/universityofmelbourne/form/NewRecord,Australia,,,,,INPUT,text,SingleLine,,,,,,,
+2019-09-17T02:25:02.128Z,vleno,Chrome,editField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,SingleLine,Australia,,,,,,
+2019-09-17T02:24:59.435Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet1,E4,,,,,Australia,,,,,,
+2019-09-17T02:25:05.163Z,,OS-Clipboard,copy,,srichards@gmail.com,,,,,,,,,,,,,,
+2019-09-17T02:25:07.392Z,vleno,Chrome,clickTextField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Email,,,,,,,
+2019-09-17T02:25:07.792Z,vleno,Chrome,paste,https://forms.zoho.com/universityofmelbourne/form/NewRecord,srichards@gmail.com,,,,,INPUT,text,Email,,,,,,,
+2019-09-17T02:25:08.256Z,vleno,Chrome,editField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Email,srichards@gmail.com,,,,,,
+2019-09-17T02:25:10.634Z,,OS-Clipboard,copy,,396 Clarendon St, South Melbourne, VIC 3205, Australia,,,,,,,,,,,,,,
+2019-09-17T02:25:05.068Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet1,D4,,,,,srichards@gmail.com,,,,,,
+2019-09-17T02:25:10.562Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet1,F4,,,,,396 Clarendon St, South Melbourne, VIC 3205, Australia,,,,,,
+2019-09-17T02:25:12.297Z,vleno,Chrome,clickTextField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Address_AddressLine1,,,,,,,
+2019-09-17T02:25:12.504Z,vleno,Chrome,paste,https://forms.zoho.com/universityofmelbourne/form/NewRecord,396 Clarendon St, South Melbourne, VIC 3205, Australia,,,,,INPUT,text,Address_AddressLine1,,,,,,,
+2019-09-17T02:25:18.705Z,vleno,Chrome,editField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Address_AddressLine1,396 Clarendon St,,,,,,
+2019-09-17T02:25:18.770Z,vleno,Chrome,clickTextField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Address_City,,,,,,,
+2019-09-17T02:25:19.008Z,vleno,Chrome,paste,https://forms.zoho.com/universityofmelbourne/form/NewRecord,396 Clarendon St, South Melbourne, VIC 3205, Australia,,,,,INPUT,text,Address_City,,,,,,,
+2019-09-17T02:25:26.122Z,vleno,Chrome,editField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Address_City,South Melbourne,,,,,,
+2019-09-17T02:25:27.103Z,vleno,Chrome,clickTextField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Address_Region,,,,,,,
+2019-09-17T02:25:27.912Z,vleno,Chrome,paste,https://forms.zoho.com/universityofmelbourne/form/NewRecord,396 Clarendon St, South Melbourne, VIC 3205, Australia,,,,,INPUT,text,Address_Region,,,,,,,
+2019-09-17T02:25:33.850Z,vleno,Chrome,editField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Address_Region,VIC,,,,,,
+2019-09-17T02:25:34.688Z,vleno,Chrome,clickTextField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Address_ZipCode,,,,,,,
+2019-09-17T02:25:35.304Z,vleno,Chrome,paste,https://forms.zoho.com/universityofmelbourne/form/NewRecord,396 Clarendon St, South Melbourne, VIC 3205, Australia,,,,,INPUT,text,Address_ZipCode,,,,,,,
+2019-09-17T02:25:41.755Z,vleno,Chrome,editField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Address_ZipCode,3205,,,,,,
+2019-09-17T02:25:49.386Z,vleno,Chrome,clickButton,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,fmSmtButton submitColor disabledSubmitButtom,BUTTON,submit,,submit,Submit,,,,,\n<em>Submit</em>\n
+2019-09-17T02:25:55.404Z,vleno,Chrome,clickLink,https://forms.zoho.com/universityofmelbourne/form/NewRecord/thankyou,,,,,,A,,,,Add another response.,,/universityofmelbourne/form/NewRecord,,, \n<em class=\liveAddIcon flLeft\></em>\n<b>Add another response.</b>\n<div class=\clearBoth\></div>
+2019-09-17T02:26:00.359Z,,OS-Clipboard,copy,,Gerard Dubois,,,,,,,,,,,,,,
+2019-09-17T02:26:02.088Z,vleno,Chrome,clickTextField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Name_First,,,,,,,
+2019-09-17T02:26:02.392Z,vleno,Chrome,paste,https://forms.zoho.com/universityofmelbourne/form/NewRecord,Gerard Dubois,,,,,INPUT,text,Name_First,,,,,,,
+2019-09-17T02:26:04.593Z,vleno,Chrome,editField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Name_First,Gerard,,,,,,
+2019-09-17T02:26:04.672Z,vleno,Chrome,clickTextField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Name_Last,,,,,,,
+2019-09-17T02:26:04.992Z,vleno,Chrome,copy,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Name_Last,,,,,,,
+2019-09-17T02:26:04.994Z,vleno,Chrome,paste,https://forms.zoho.com/universityofmelbourne/form/NewRecord,Gerard Dubois,,,,,INPUT,text,Name_Last,,,,,,,
+2019-09-17T02:26:08.897Z,vleno,Chrome,editField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Name_Last,Dubois,,,,,,
+2019-09-17T02:26:00.279Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet1,A5,,,,,Gerard Dubois,,,,,,
+2019-09-17T02:26:11.229Z,,OS-Clipboard,copy,,08/04/1987,,,,,,,,,,,,,,
+2019-09-17T02:26:11.116Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet1,B5,,,,,08/04/1987,,,,,,
+2019-09-17T02:26:12.731Z,vleno,Chrome,clickTextField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,Date-date,hasDatepicker,INPUT,text,date,,,,,,,
+2019-09-17T02:26:13.024Z,vleno,Chrome,paste,https://forms.zoho.com/universityofmelbourne/form/NewRecord,08/04/1987,,,Date-date,hasDatepicker,INPUT,text,date,,,,,,,
+2019-09-17T02:26:17.589Z,vleno,Chrome,editField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,Date-date,hasDatepicker,INPUT,text,date,08-04-1987,,,,,,
+2019-09-17T02:26:21.123Z,,OS-Clipboard,copy,,France,,,,,,,,,,,,,,
+2019-09-17T02:26:22.759Z,vleno,Chrome,clickTextField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,SingleLine,,,,,,,
+2019-09-17T02:26:23.096Z,vleno,Chrome,paste,https://forms.zoho.com/universityofmelbourne/form/NewRecord,France,,,,,INPUT,text,SingleLine,,,,,,,
+2019-09-17T02:26:23.561Z,vleno,Chrome,editField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,SingleLine,France,,,,,,
+2019-09-17T02:26:26.439Z,,OS-Clipboard,copy,,+61 043 532 6105,,,,,,,,,,,,,,
+2019-09-17T02:26:21.035Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet1,E5,,,,,France,,,,,,
+2019-09-17T02:26:26.397Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet1,C5,,,,,+61 043 532 6105,,,,,,
+2019-09-17T02:26:28.040Z,vleno,Chrome,clickTextField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,PhoneNumber,,INPUT,text,countrycode,,,,,,,
+2019-09-17T02:26:28.248Z,vleno,Chrome,paste,https://forms.zoho.com/universityofmelbourne/form/NewRecord,+61 043 532 6105,,,PhoneNumber,,INPUT,text,countrycode,,,,,,,
+2019-09-17T02:26:33.865Z,vleno,Chrome,editField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,PhoneNumber,,INPUT,text,countrycode,043-532-6105,,,,,,
+2019-09-17T02:26:37.051Z,,OS-Clipboard,copy,,gdubois@gmail.com,,,,,,,,,,,,,,
+2019-09-17T02:26:38.624Z,vleno,Chrome,clickTextField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Email,,,,,,,
+2019-09-17T02:26:38.920Z,vleno,Chrome,paste,https://forms.zoho.com/universityofmelbourne/form/NewRecord,gdubois@gmail.com,,,,,INPUT,text,Email,,,,,,,
+2019-09-17T02:26:39.393Z,vleno,Chrome,editField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Email,gdubois@gmail.com,,,,,,
+2019-09-17T02:26:41.971Z,,OS-Clipboard,copy,,120 Princes St, Port Melbourne, VIC 3207, Australia ,,,,,,,,,,,,,,
+2019-09-17T02:26:36.980Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet1,D5,,,,,gdubois@gmail.com,,,,,,
+2019-09-17T02:26:41.908Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet1,F5,,,,,120 Princes St, Port Melbourne, VIC 3207, Australia ,,,,,,
+2019-09-17T02:26:43.359Z,vleno,Chrome,clickTextField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Address_AddressLine1,,,,,,,
+2019-09-17T02:26:43.656Z,vleno,Chrome,paste,https://forms.zoho.com/universityofmelbourne/form/NewRecord,120 Princes St, Port Melbourne, VIC 3207, Australia ,,,,,INPUT,text,Address_AddressLine1,,,,,,,
+2019-09-17T02:26:48.955Z,vleno,Chrome,editField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Address_AddressLine1,120 Princes St,,,,,,
+2019-09-17T02:26:49.040Z,vleno,Chrome,clickTextField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Address_City,,,,,,,
+2019-09-17T02:26:50.208Z,vleno,Chrome,copy,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Address_City,,,,,,,
+2019-09-17T02:26:50.209Z,vleno,Chrome,paste,https://forms.zoho.com/universityofmelbourne/form/NewRecord,120 Princes St, Port Melbourne, VIC 3207, Australia ,,,,,INPUT,text,Address_City,,,,,,,
+2019-09-17T02:26:56.329Z,vleno,Chrome,editField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Address_City,Port Melbourne,,,,,,
+2019-09-17T02:27:02.783Z,vleno,Chrome,clickTextField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Address_Region,,,,,,,
+2019-09-17T02:27:03.056Z,vleno,Chrome,paste,https://forms.zoho.com/universityofmelbourne/form/NewRecord,120 Princes St, Port Melbourne, VIC 3207, Australia ,,,,,INPUT,text,Address_Region,,,,,,,
+2019-09-17T02:27:08.202Z,vleno,Chrome,editField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Address_Region,VIC,,,,,,
+2019-09-17T02:27:09.016Z,vleno,Chrome,clickTextField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Address_ZipCode,,,,,,,
+2019-09-17T02:27:09.760Z,vleno,Chrome,paste,https://forms.zoho.com/universityofmelbourne/form/NewRecord,120 Princes St, Port Melbourne, VIC 3207, Australia ,,,,,INPUT,text,Address_ZipCode,,,,,,,
+2019-09-17T02:27:16.032Z,vleno,Chrome,editField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Address_ZipCode,3207,,,,,,
+2019-09-17T02:27:22.799Z,vleno,Chrome,clickCheckbox,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,DecisionBox,,INPUT,checkbox,DecisionBox,on,,true,,,,
+2019-09-17T02:27:22.800Z,vleno,Chrome,editField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,DecisionBox,,INPUT,checkbox,DecisionBox,on,,true,,,,
+2019-09-17T02:27:23.735Z,vleno,Chrome,clickButton,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,fmSmtButton submitColor disabledSubmitButtom,BUTTON,submit,,submit,Submit,,,,,\n<em>Submit</em>\n
+2019-09-17T02:27:26.743Z,vleno,Chrome,clickLink,https://forms.zoho.com/universityofmelbourne/form/NewRecord/thankyou,,,,,,A,,,,Add another response.,,/universityofmelbourne/form/NewRecord,,, \n<em class=\liveAddIcon flLeft\></em>\n<b>Add another response.</b>\n<div class=\clearBoth\></div>
+2019-09-17T02:27:30.960Z,,OS-Clipboard,copy,,Audrey Backer,,,,,,,,,,,,,,
+2019-09-17T02:27:32.615Z,vleno,Chrome,clickTextField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Name_First,,,,,,,
+2019-09-17T02:27:32.863Z,vleno,Chrome,paste,https://forms.zoho.com/universityofmelbourne/form/NewRecord,Audrey Backer,,,,,INPUT,text,Name_First,,,,,,,
+2019-09-17T02:27:34.889Z,vleno,Chrome,editField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Name_First,Audrey,,,,,,
+2019-09-17T02:27:34.975Z,vleno,Chrome,clickTextField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Name_Last,,,,,,,
+2019-09-17T02:27:35.319Z,vleno,Chrome,paste,https://forms.zoho.com/universityofmelbourne/form/NewRecord,Audrey Backer,,,,,INPUT,text,Name_Last,,,,,,,
+2019-09-17T02:27:38.097Z,vleno,Chrome,editField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Name_Last,Backer,,,,,,
+2019-09-17T02:27:30.860Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet1,A6,,,,,Audrey Backer,,,,,,
+2019-09-17T02:27:40.614Z,,OS-Clipboard,copy,,20/06/1987,,,,,,,,,,,,,,
+2019-09-17T02:27:40.523Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet1,B6,,,,,20/06/1987,,,,,,
+2019-09-17T02:27:42.132Z,vleno,Chrome,clickTextField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,Date-date,hasDatepicker,INPUT,text,date,,,,,,,
+2019-09-17T02:27:42.328Z,vleno,Chrome,paste,https://forms.zoho.com/universityofmelbourne/form/NewRecord,20/06/1987,,,Date-date,hasDatepicker,INPUT,text,date,,,,,,,
+2019-09-17T02:27:46.679Z,vleno,Chrome,editField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,Date-date,hasDatepicker,INPUT,text,date,20-06-1987,,,,,,
+2019-09-17T02:27:49.756Z,,OS-Clipboard,copy,,United States,,,,,,,,,,,,,,
+2019-09-17T02:27:51.343Z,vleno,Chrome,clickTextField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,SingleLine,,,,,,,
+2019-09-17T02:27:51.576Z,vleno,Chrome,paste,https://forms.zoho.com/universityofmelbourne/form/NewRecord,United States,,,,,INPUT,text,SingleLine,,,,,,,
+2019-09-17T02:27:52.048Z,vleno,Chrome,editField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,SingleLine,United States,,,,,,
+2019-09-17T02:27:49.676Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet1,E6,,,,,United States,,,,,,
+2019-09-17T02:27:54.950Z,,OS-Clipboard,copy,,+61 519 790 1066,,,,,,,,,,,,,,
+2019-09-17T02:27:54.851Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet1,C6,,,,,+61 519 790 1066,,,,,,
+2019-09-17T02:27:56.911Z,vleno,Chrome,clickTextField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,PhoneNumber,,INPUT,text,countrycode,,,,,,,
+2019-09-17T02:27:57.167Z,vleno,Chrome,paste,https://forms.zoho.com/universityofmelbourne/form/NewRecord,+61 519 790 1066,,,PhoneNumber,,INPUT,text,countrycode,,,,,,,
+2019-09-17T02:28:02.578Z,vleno,Chrome,editField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,PhoneNumber,,INPUT,text,countrycode,519-790-1066,,,,,,
+2019-09-17T02:28:05.641Z,,OS-Clipboard,copy,,abacker@gmail.com,,,,,,,,,,,,,,
+2019-09-17T02:28:07.087Z,vleno,Chrome,clickTextField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Email,,,,,,,
+2019-09-17T02:28:07.319Z,vleno,Chrome,paste,https://forms.zoho.com/universityofmelbourne/form/NewRecord,abacker@gmail.com,,,,,INPUT,text,Email,,,,,,,
+2019-09-17T02:28:07.809Z,vleno,Chrome,editField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Email,abacker@gmail.com,,,,,,
+2019-09-17T02:28:05.603Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet1,D6,,,,,abacker@gmail.com,,,,,,
+2019-09-17T02:28:10.428Z,,OS-Clipboard,copy,,9/271 William St, Melbourne, VIC 3000, Australia,,,,,,,,,,,,,,
+2019-09-17T02:28:10.323Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet1,F6,,,,,9/271 William St, Melbourne, VIC 3000, Australia,,,,,,
+2019-09-17T02:28:12.136Z,vleno,Chrome,clickTextField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Address_AddressLine1,,,,,,,
+2019-09-17T02:28:12.384Z,vleno,Chrome,paste,https://forms.zoho.com/universityofmelbourne/form/NewRecord,9/271 William St, Melbourne, VIC 3000, Australia,,,,,INPUT,text,Address_AddressLine1,,,,,,,
+2019-09-17T02:28:15.897Z,vleno,Chrome,editField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Address_AddressLine1,9/271 William St,,,,,,
+2019-09-17T02:28:15.983Z,vleno,Chrome,clickTextField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Address_City,,,,,,,
+2019-09-17T02:28:16.263Z,vleno,Chrome,paste,https://forms.zoho.com/universityofmelbourne/form/NewRecord,9/271 William St, Melbourne, VIC 3000, Australia,,,,,INPUT,text,Address_City,,,,,,,
+2019-09-17T02:28:22.601Z,vleno,Chrome,editField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Address_City,Melbourne,,,,,,
+2019-09-17T02:28:23.503Z,vleno,Chrome,clickTextField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Address_Region,,,,,,,
+2019-09-17T02:28:24.176Z,vleno,Chrome,paste,https://forms.zoho.com/universityofmelbourne/form/NewRecord,9/271 William St, Melbourne, VIC 3000, Australia,,,,,INPUT,text,Address_Region,,,,,,,
+2019-09-17T02:28:28.993Z,vleno,Chrome,editField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Address_Region,VIC,,,,,,
+2019-09-17T02:28:30.975Z,vleno,Chrome,clickTextField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Address_ZipCode,,,,,,,
+2019-09-17T02:28:31.255Z,vleno,Chrome,paste,https://forms.zoho.com/universityofmelbourne/form/NewRecord,9/271 William St, Melbourne, VIC 3000, Australia,,,,,INPUT,text,Address_ZipCode,,,,,,,
+2019-09-17T02:28:36.553Z,vleno,Chrome,editField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Address_ZipCode,3000,,,,,,
+2019-09-17T02:28:40.959Z,vleno,Chrome,clickCheckbox,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,DecisionBox,,INPUT,checkbox,DecisionBox,on,,true,,,,
+2019-09-17T02:28:40.960Z,vleno,Chrome,editField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,DecisionBox,,INPUT,checkbox,DecisionBox,on,,true,,,,
+2019-09-17T02:28:41.651Z,vleno,Chrome,clickButton,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,fmSmtButton submitColor disabledSubmitButtom,BUTTON,submit,,submit,Submit,,,,,\n<em>Submit</em>\n
+2019-09-17T02:28:46.609Z,vleno,Chrome,clickLink,https://forms.zoho.com/universityofmelbourne/form/NewRecord/thankyou,,,,,,A,,,,Add another response.,,/universityofmelbourne/form/NewRecord,,, \n<em class=\liveAddIcon flLeft\></em>\n<b>Add another response.</b>\n<div class=\clearBoth\></div>
+2019-09-17T02:28:51.130Z,,OS-Clipboard,copy,,Carl Gustafsson,,,,,,,,,,,,,,
+2019-09-17T02:28:53.143Z,vleno,Chrome,clickTextField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Name_First,,,,,,,
+2019-09-17T02:28:53.368Z,vleno,Chrome,paste,https://forms.zoho.com/universityofmelbourne/form/NewRecord,Carl Gustafsson,,,,,INPUT,text,Name_First,,,,,,,
+2019-09-17T02:28:55.725Z,vleno,Chrome,editField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Name_First,Carl,,,,,,
+2019-09-17T02:28:55.800Z,vleno,Chrome,clickTextField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Name_Last,,,,,,,
+2019-09-17T02:28:56.055Z,vleno,Chrome,paste,https://forms.zoho.com/universityofmelbourne/form/NewRecord,Carl Gustafsson,,,,,INPUT,text,Name_Last,,,,,,,
+2019-09-17T02:28:59.154Z,vleno,Chrome,editField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Name_Last,Gustafsson,,,,,,
+2019-09-17T02:28:51.084Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet1,A7,,,,,Carl Gustafsson,,,,,,
+2019-09-17T02:29:02.126Z,,OS-Clipboard,copy,,01/08/1987,,,,,,,,,,,,,,
+2019-09-17T02:29:03.651Z,vleno,Chrome,clickTextField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,Date-date,hasDatepicker,INPUT,text,date,,,,,,,
+2019-09-17T02:29:03.857Z,vleno,Chrome,paste,https://forms.zoho.com/universityofmelbourne/form/NewRecord,01/08/1987,,,Date-date,hasDatepicker,INPUT,text,date,,,,,,,
+2019-09-17T02:29:07.780Z,vleno,Chrome,editField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,Date-date,hasDatepicker,INPUT,text,date,01-08-1987,,,,,,
+2019-09-17T02:29:02.028Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet1,B7,,,,,01/08/1987,,,,,,
+2019-09-17T02:29:12.299Z,,OS-Clipboard,copy,,Sweden,,,,,,,,,,,,,,
+2019-09-17T02:29:14.391Z,vleno,Chrome,clickTextField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,SingleLine,,,,,,,
+2019-09-17T02:29:14.567Z,vleno,Chrome,paste,https://forms.zoho.com/universityofmelbourne/form/NewRecord,Sweden,,,,,INPUT,text,SingleLine,,,,,,,
+2019-09-17T02:29:16.034Z,vleno,Chrome,editField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,SingleLine,Sweden,,,,,,
+2019-09-17T02:29:12.204Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet1,E7,,,,,Sweden,,,,,,
+2019-09-17T02:29:18.678Z,,OS-Clipboard,copy,,+61 043 587 1823,,,,,,,,,,,,,,
+2019-09-17T02:29:20.639Z,vleno,Chrome,clickTextField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,PhoneNumber,,INPUT,text,countrycode,,,,,,,
+2019-09-17T02:29:21.024Z,vleno,Chrome,paste,https://forms.zoho.com/universityofmelbourne/form/NewRecord,+61 043 587 1823,,,PhoneNumber,,INPUT,text,countrycode,,,,,,,
+2019-09-17T02:29:26.648Z,vleno,Chrome,editField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,PhoneNumber,,INPUT,text,countrycode,043-587-1823,,,,,,
+2019-09-17T02:29:18.590Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet1,C7,,,,,+61 043 587 1823,,,,,,
+2019-09-17T02:29:29.404Z,,OS-Clipboard,copy,,cgustafsson@gmail.com,,,,,,,,,,,,,,
+2019-09-17T02:29:29.299Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet1,D7,,,,,cgustafsson@gmail.com,,,,,,
+2019-09-17T02:29:30.847Z,vleno,Chrome,clickTextField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Email,,,,,,,
+2019-09-17T02:29:31.152Z,vleno,Chrome,paste,https://forms.zoho.com/universityofmelbourne/form/NewRecord,cgustafsson@gmail.com,,,,,INPUT,text,Email,,,,,,,
+2019-09-17T02:29:31.721Z,vleno,Chrome,editField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Email,cgustafsson@gmail.com,,,,,,
+2019-09-17T02:29:34.518Z,,OS-Clipboard,copy,,177 Cecil St, South Melbourne, VIC 3205, Australia,,,,,,,,,,,,,,
+2019-09-17T02:29:36.143Z,vleno,Chrome,clickTextField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Address_AddressLine1,,,,,,,
+2019-09-17T02:29:36.392Z,vleno,Chrome,paste,https://forms.zoho.com/universityofmelbourne/form/NewRecord,177 Cecil St, South Melbourne, VIC 3205, Australia,,,,,INPUT,text,Address_AddressLine1,,,,,,,
+2019-09-17T02:29:45.356Z,vleno,Chrome,editField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Address_AddressLine1,177 Cecil St,,,,,,
+2019-09-17T02:29:51.119Z,vleno,Chrome,clickTextField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Address_City,,,,,,,
+2019-09-17T02:29:52.055Z,vleno,Chrome,paste,https://forms.zoho.com/universityofmelbourne/form/NewRecord,177 Cecil St, South Melbourne, VIC 3205, Australia,,,,,INPUT,text,Address_City,,,,,,,
+2019-09-17T02:29:52.105Z,,OS-Clipboard,copy,,177 Cecil St, South Melbourne, VIC 3205, Australia,,,,,,,,,,,,,,
+2019-09-17T02:29:58.073Z,vleno,Chrome,editField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Address_City,South Melbourne,,,,,,
+2019-09-17T02:29:58.840Z,vleno,Chrome,clickTextField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Address_Region,,,,,,,
+2019-09-17T02:29:59.064Z,vleno,Chrome,paste,https://forms.zoho.com/universityofmelbourne/form/NewRecord,177 Cecil St, South Melbourne, VIC 3205, Australia,,,,,INPUT,text,Address_Region,,,,,,,
+2019-09-17T02:30:05.376Z,vleno,Chrome,editField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Address_Region,VIC,,,,,,
+2019-09-17T02:30:07.559Z,vleno,Chrome,clickTextField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Address_ZipCode,,,,,,,
+2019-09-17T02:30:07.824Z,vleno,Chrome,paste,https://forms.zoho.com/universityofmelbourne/form/NewRecord,177 Cecil St, South Melbourne, VIC 3205, Australia,,,,,INPUT,text,Address_ZipCode,,,,,,,
+2019-09-17T02:30:13.129Z,vleno,Chrome,editField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Address_ZipCode,3205,,,,,,
+2019-09-17T02:30:18.376Z,vleno,Chrome,clickCheckbox,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,DecisionBox,,INPUT,checkbox,DecisionBox,on,,true,,,,
+2019-09-17T02:30:18.377Z,vleno,Chrome,editField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,DecisionBox,,INPUT,checkbox,DecisionBox,on,,true,,,,
+2019-09-17T02:30:19.184Z,vleno,Chrome,clickButton,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,fmSmtButton submitColor disabledSubmitButtom,BUTTON,submit,,submit,Submit,,,,,\n<em>Submit</em>\n
+2019-09-17T02:30:22.033Z,vleno,Chrome,clickLink,https://forms.zoho.com/universityofmelbourne/form/NewRecord/thankyou,,,,,,A,,,,Add another response.,,/universityofmelbourne/form/NewRecord,,, \n<em class=\liveAddIcon flLeft\></em>\n<b>Add another response.</b>\n<div class=\clearBoth\></div>
+2019-09-17T02:29:34.440Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet1,F7,,,,,177 Cecil St, South Melbourne, VIC 3205, Australia,,,,,,
+2019-09-17T02:30:32.227Z,,OS-Clipboard,copy,,Sarah Johnson,,,,,,,,,,,,,,
+2019-09-17T02:30:34.264Z,vleno,Chrome,clickTextField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Name_First,,,,,,,
+2019-09-17T02:30:34.504Z,vleno,Chrome,paste,https://forms.zoho.com/universityofmelbourne/form/NewRecord,Sarah Johnson,,,,,INPUT,text,Name_First,,,,,,,
+2019-09-17T02:30:37.057Z,vleno,Chrome,editField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Name_First,Sarah,,,,,,
+2019-09-17T02:30:37.103Z,vleno,Chrome,clickTextField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Name_Last,,,,,,,
+2019-09-17T02:30:37.840Z,vleno,Chrome,paste,https://forms.zoho.com/universityofmelbourne/form/NewRecord,Sarah Johnson,,,,,INPUT,text,Name_Last,,,,,,,
+2019-09-17T02:30:40.720Z,vleno,Chrome,editField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Name_Last,Johnson,,,,,,
+2019-09-17T02:30:43.808Z,,OS-Clipboard,copy,,25/03/1989,,,,,,,,,,,,,,
+2019-09-17T02:30:32.177Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet1,A8,,,,,Sarah Johnson,,,,,,
+2019-09-17T02:30:43.744Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet1,B8,,,,,25/03/1989,,,,,,
+2019-09-17T02:30:45.260Z,vleno,Chrome,clickTextField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,Date-date,hasDatepicker,INPUT,text,date,,,,,,,
+2019-09-17T02:30:45.448Z,vleno,Chrome,paste,https://forms.zoho.com/universityofmelbourne/form/NewRecord,25/03/1989,,,Date-date,hasDatepicker,INPUT,text,date,,,,,,,
+2019-09-17T02:30:49.302Z,vleno,Chrome,editField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,Date-date,hasDatepicker,INPUT,text,date,25-03-1989,,,,,,
+2019-09-17T02:30:53.571Z,,OS-Clipboard,copy,,Australia,,,,,,,,,,,,,,
+2019-09-17T02:30:55.504Z,vleno,Chrome,clickTextField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,SingleLine,,,,,,,
+2019-09-17T02:30:55.688Z,vleno,Chrome,paste,https://forms.zoho.com/universityofmelbourne/form/NewRecord,Australia,,,,,INPUT,text,SingleLine,,,,,,,
+2019-09-17T02:30:56.227Z,vleno,Chrome,editField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,SingleLine,Australia,,,,,,
+2019-09-17T02:30:53.491Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet1,E8,,,,,Australia,,,,,,
+2019-09-17T02:30:59.314Z,,OS-Clipboard,copy,,+61 035 341 2938,,,,,,,,,,,,,,
+2019-09-17T02:30:59.252Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet1,C8,,,,,+61 035 341 2938,,,,,,
+2019-09-17T02:31:01.199Z,vleno,Chrome,clickTextField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,PhoneNumber,,INPUT,text,countrycode,,,,,,,
+2019-09-17T02:31:01.537Z,vleno,Chrome,paste,https://forms.zoho.com/universityofmelbourne/form/NewRecord,+61 035 341 2938,,,PhoneNumber,,INPUT,text,countrycode,,,,,,,
+2019-09-17T02:31:06.705Z,vleno,Chrome,editField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,PhoneNumber,,INPUT,text,countrycode,035-341-2938,,,,,,
+2019-09-17T02:31:09.290Z,,OS-Clipboard,copy,,sjohnson@gmail.com,,,,,,,,,,,,,,
+2019-09-17T02:31:10.783Z,vleno,Chrome,clickTextField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Email,,,,,,,
+2019-09-17T02:31:10.976Z,vleno,Chrome,paste,https://forms.zoho.com/universityofmelbourne/form/NewRecord,sjohnson@gmail.com,,,,,INPUT,text,Email,,,,,,,
+2019-09-17T02:31:11.489Z,vleno,Chrome,editField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Email,sjohnson@gmail.com,,,,,,
+2019-09-17T02:31:09.230Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet1,D8,,,,,sjohnson@gmail.com,,,,,,
+2019-09-17T02:31:14.553Z,,OS-Clipboard,copy,,225 Abbotsford St, North Melbourne, VIC 3051, Australia,,,,,,,,,,,,,,
+2019-09-17T02:31:14.480Z,vleno,Excel,getCell,,,StudentRecords.xlsx,Sheet1,F8,,,,,225 Abbotsford St, North Melbourne, VIC 3051, Australia,,,,,,
+2019-09-17T02:31:16.455Z,vleno,Chrome,clickTextField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Address_AddressLine1,,,,,,,
+2019-09-17T02:31:16.648Z,vleno,Chrome,paste,https://forms.zoho.com/universityofmelbourne/form/NewRecord,225 Abbotsford St, North Melbourne, VIC 3051, Australia,,,,,INPUT,text,Address_AddressLine1,,,,,,,
+2019-09-17T02:31:20.209Z,vleno,Chrome,editField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Address_AddressLine1,225 Abbotsford St,,,,,,
+2019-09-17T02:31:20.264Z,vleno,Chrome,clickTextField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Address_City,,,,,,,
+2019-09-17T02:31:20.664Z,vleno,Chrome,paste,https://forms.zoho.com/universityofmelbourne/form/NewRecord,225 Abbotsford St, North Melbourne, VIC 3051, Australia,,,,,INPUT,text,Address_City,,,,,,,
+2019-09-17T02:31:26.707Z,vleno,Chrome,editField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Address_City,North Melbourne,,,,,,
+2019-09-17T02:31:27.271Z,vleno,Chrome,clickTextField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Address_Region,,,,,,,
+2019-09-17T02:31:27.712Z,vleno,Chrome,paste,https://forms.zoho.com/universityofmelbourne/form/NewRecord,225 Abbotsford St, North Melbourne, VIC 3051, Australia,,,,,INPUT,text,Address_Region,,,,,,,
+2019-09-17T02:31:34.209Z,vleno,Chrome,editField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Address_Region,VIC,,,,,,
+2019-09-17T02:31:35.103Z,vleno,Chrome,clickTextField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Address_ZipCode,,,,,,,
+2019-09-17T02:31:35.600Z,vleno,Chrome,paste,https://forms.zoho.com/universityofmelbourne/form/NewRecord,225 Abbotsford St, North Melbourne, VIC 3051, Australia,,,,,INPUT,text,Address_ZipCode,,,,,,,
+2019-09-17T02:31:40.769Z,vleno,Chrome,editField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Address_ZipCode,3051,,,,,,
+2019-09-17T02:31:46.511Z,vleno,Chrome,clickCheckbox,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,DecisionBox,,INPUT,checkbox,DecisionBox,on,,true,,,,
+2019-09-17T02:31:46.513Z,vleno,Chrome,editField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,DecisionBox,,INPUT,checkbox,DecisionBox,on,,true,,,,
+2019-09-17T02:31:58.959Z,vleno,Chrome,clickCheckbox,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,DecisionBox,,INPUT,checkbox,DecisionBox,on,,false,,,,
+2019-09-17T02:31:58.961Z,vleno,Chrome,editField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,DecisionBox,,INPUT,checkbox,DecisionBox,on,,false,,,,
+2019-09-17T02:32:01.506Z,vleno,Chrome,clickButton,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,fmSmtButton submitColor disabledSubmitButtom,BUTTON,submit,,submit,Submit,,,,,\n<em>Submit</em>\n

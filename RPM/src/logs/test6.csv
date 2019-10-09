@@ -1,0 +1,7 @@
+timeStamp,userID,targetApp,eventType,url,content,target.workbookName,target.sheetName,target.id,target.className,target.tagName,target.type,target.name,target.value,target.innerText,target.checked,target.href,target.option,target.title,target.innerHTML
+2019-10-08T05:27:40.130Z,vleno,Excel,selectWorksheet,,,StudentRecords2.xlsx,Sheet1,,,,,,,,,,,,
+2019-10-08T05:27:45.373Z,vleno,Excel,getRange,,,StudentRecords2.xlsx,Sheet1,A2:D3,,,,,"[[""John"";""Doe"";""11/03/1986"";""+61 039 689 9324""];[""Albert"";""Rauf"";""11/04/1986"";""+61 043 512 4834""]]",,,,,,
+2019-10-08T05:27:45.792Z,,OS-Clipboard,copy,,"""John\tDoe\t11/03/1986\t+61 039 689 9324\r\nAlbert\tRauf\t11/04/1986\t+61 043 512 4834""",,,,,,,,,,,,,,
+2019-10-08T05:27:57.378Z,vleno,Excel,selectWorksheet,,,StudentRecords2.xlsx,Sheet3,,,,,,,,,,,,
+2019-10-08T05:27:57.380Z,vleno,Excel,getCell,,,StudentRecords2.xlsx,Sheet3,B2,,,,,John,,,,,,
+2019-10-08T05:27:57.381Z,vleno,Excel,editRange,,,StudentRecords2.xlsx,Sheet3,B2:E3,,,,,"[[""John"";""Doe"";""11/03/1986"";""+61 039 689 9324""];[""Albert"";""Rauf"";""11/04/1986"";""+61 043 512 4834""]]",,,,,,

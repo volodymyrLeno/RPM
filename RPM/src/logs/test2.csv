@@ -1,0 +1,5 @@
+timeStamp,userID	,targetApp,eventType,url,content,target.workbookName	,target.sheetName,target.id,target.class,target.tagName,target.type	,target.name,target.value,target.innerText,target.checked,target.href,target.option,target.title,target.innerHtml
+2019-10-08T00:03:00.691Z,vleno,Excel,copyRange,,"""JohntDoe""",StudentRecords2.xlsx,Sheet1,A2:B2,,,,,"[[""John"";""Doe""]]",,,,,,
+2019-10-08T00:03:03.729Z,vleno,Chrome,paste,https://forms.zoho.com/universityofmelbourne/form/NewRecord,"""JohntDoe""",,,,,INPUT,text,Name_First,,,,,,,
+2019-10-08T00:03:08.537Z,vleno,Chrome,editField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Name_First,John	Doe,,,,,,
+2019-10-08T00:03:23.201Z,vleno,Chrome,clickButton,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,fmSmtButton submitColor fmSmtButtom,BUTTON,submit,,submit,"""Submit""",,,,,"""n<em>Submit</em>n"""

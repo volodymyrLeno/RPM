@@ -1,0 +1,8 @@
+timeStamp,userID,targetApp,eventType,url,content,target.workbookName,target.sheetName,target.id,target.className,target.tagName,target.type,target.name,target.value,target.innerText,target.checked,target.href,target.option,target.title,target.innerHTML
+2019-10-08T05:42:14.838Z,vleno,Excel,selectWorksheet,,,StudentRecords2.xlsx,Sheet1,,,,,,,,,,,,
+2019-10-08T05:42:20.129Z,,OS-Clipboard,copy,,"""Gerard\tDubois""",,,,,,,,,,,,,,
+2019-10-08T05:42:19.278Z,vleno,Excel,getRange,,,StudentRecords2.xlsx,Sheet1,A5:B5,,,,,"[[""Gerard"";""Dubois""]]",,,,,,
+2019-10-08T05:42:24.227Z,vleno,Chrome,selectTab,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,156,,,,,,,,,,Zoho Forms,
+2019-10-08T05:42:27.571Z,vleno,Chrome,clickTextField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Name_Last,"""""",,,,,,
+2019-10-08T05:42:28.938Z,vleno,Chrome,paste,https://forms.zoho.com/universityofmelbourne/form/NewRecord,"""Gerard\tDubois""",,,,,INPUT,text,Name_Last,"""""",,,,,,
+2019-10-08T05:42:31.891Z,vleno,Chrome,editField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Name_Last,"""Gerard\tDubois""",,,,,,

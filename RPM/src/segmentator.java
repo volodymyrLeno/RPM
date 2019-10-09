@@ -11,7 +11,7 @@ public final class segmentator {
         List<Event> caseEvents = new ArrayList<>();
         for(Event ev: events){
             caseEvents.add(ev);
-            if(ev.eventType.equals("mouseClick") && ev.payload.containsKey("target.innerText") && ev.payload.get("target.innerText").equals("Submit")) {
+            if(ev.eventType.equals("clickButton") && ev.payload.containsKey("target.innerText") && ev.payload.get("target.innerText").equals("Submit")) {
                 cases.put(id.toString(), new ArrayList<>(caseEvents));
                 caseEvents.clear();
                 id++;

@@ -1,0 +1,5 @@
+timeStamp,userID,targetApp,eventType,url,content,target.workbookName,target.sheetName,target.id,target.className,target.tagName,target.type,target.name,target.value,target.innerText,target.checked,target.href,target.option,target.title,target.innerHTML
+2019-10-08T01:57:51.274Z,vleno,Excel,getCell,,,StudentRecords2.xlsx,Sheet1,G2,,,,,"122 Albert St, Port Melbourne, VIC 3207, Australia",,,,,,
+2019-10-08T01:58:06.895Z,vleno,Excel,getCell,,,StudentRecords2.xlsx,Sheet1,A4,,,,,Steven,,,,,,
+2019-10-08T01:58:20.688Z,,OS-Clipboard,copy,,"""396 Clarendon St, South Melbourne, VIC 3205, Australia""",,,,,,,,,,,,,,
+2019-10-08T01:58:20.635Z,vleno,Excel,getCell,,,StudentRecords2.xlsx,Sheet1,G4,,,,,"396 Clarendon St, South Melbourne, VIC 3205, Australia",,,,,,
