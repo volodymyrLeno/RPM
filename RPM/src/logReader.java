@@ -28,12 +28,20 @@ public final class logReader {
             while ((line = br.readLine()) != null) {
                 if(Character.codePointAt(line, 0) == 0xFEFF)
                     line = line.substring(1);
-                String[] row = line.split("[,](?=([^\"]*\"[^\"]*\")*[^\"]*$)");
+                String[] row = line.split(",(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)", -1);
                 if(counter == 0) {
                     counter++;
+                    for(int i = 0; i < row.length; i++)
+                        row[i] = row[i].replaceAll("^\"(.*)\"$","$1");
                     Collections.addAll(attributes, row);
                 }
                 else {
+                    for(int i = 0; i < row.length; i++){
+                        if(row[i].matches("\"+"))
+                            row[i] = "\"\"";
+                        else
+                            row[i] = row[i].replaceAll("^\"(.*)\"$","$1");
+                    }
                     events.add(new Event(attributes, row));
                     counter++;
                 }

@@ -1,9 +1,9 @@
 import data.TransformationExample;
 
-import javax.xml.crypto.dsig.Transform;
-import java.util.*;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.List;
 
 public class tokenizer {
 
@@ -20,6 +20,25 @@ public class tokenizer {
             }
         }
         return clusters;
+    }
+
+    public static String tokenize(TransformationExample transformationExample){
+        List<String> patterns = new ArrayList<>();
+        for(var example: transformationExample.getInputExample()){
+            var pattern = example.replaceAll("[a-zA-Z]+","<a>+");
+            pattern = pattern.replaceAll("\\d+", "<d>+");
+            patterns.add(pattern);
+        }
+        if(patterns.size() == 1)
+            return patterns.get(0);
+        else
+            return patterns.toString();
+    }
+
+    public static String tokenize(String input){
+        input = input.replaceAll("[a-zA-Z]+","<a>+");
+        input = input.replaceAll("\\d+", "<d>+");
+        return input;
     }
 
     /*
@@ -40,17 +59,4 @@ public class tokenizer {
         return input;
     }
      */
-
-    public static String tokenize(TransformationExample transformationExample){
-        String input = transformationExample.getInputExample();
-        input = input.replaceAll("[a-zA-Z]+","<a>+");
-        input = input.replaceAll("\\d+", "<d>+");
-        return input;
-    }
-
-    public static String tokenize(String input){
-        input = input.replaceAll("[a-zA-Z]+","<a>+");
-        input = input.replaceAll("\\d+", "<d>+");
-        return input;
-    }
 }
