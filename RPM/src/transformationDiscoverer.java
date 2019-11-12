@@ -137,18 +137,36 @@ public class transformationDiscoverer {
             List<Event> events = new ArrayList<>(cases.get(caseID));
             List<String> targets = new ArrayList<>();
             for (int i = events.size() - 1; i >= 0; i--) {
-                if (events.get(i).eventType.equals("editField") && !targets.contains(events.get(i).payload.get("target.name"))) {
-                    String target = events.get(i).payload.get("target.name");
+                if(writeActions.contains(events.get(i).eventType) && !targets.contains(events.get(i).payload.get("target.name"))){
+                //if (events.get(i).eventType.equals("editField") && !targets.contains(events.get(i).payload.get("target.name"))) {
+                    //String target = events.get(i).payload.get("target.name");
+                    String target = events.get(i).payload.containsKey("target.id") ? events.get(i).payload.get("target.id") :
+                            events.get(i).payload.get("target.name");
                     String output = events.get(i).payload.get("target.value").replaceAll("\\P{Print}", " ");;
                     String source = "";
                     List<String> input = new ArrayList<>();
                     targets.add(target);
                     for (int j = 0; j < i; j++)
-                        if (events.get(j).eventType.equals("paste") &&
-                                events.get(j).payload.get("target.name").equals(target)) {
+                        if ((events.get(j).eventType.equals("paste") || events.get(j).eventType.equals("pasteIntoCell") ||
+                                events.get(j).eventType.equals("pasteIntoRange")) &&
+                                ((events.get(j).payload.containsKey("target.name") && events.get(j).payload.get("target.name").equals(target)) ||
+                                (events.get(j).payload.containsKey("target.id") && events.get(j).payload.get("target.id").equals(target)))) {
                             for (int k = j; k >= 0; k--)
-                                if (events.get(k).eventType.equals("copyCell")) {
-                                    source = source == "" ? events.get(k).payload.get("target.id") : source + "," + events.get(k).payload.get("target.id");
+                                if(readActions.contains(events.get(k).eventType)){
+                                //if (events.get(k).eventType.equals("copyCell")) {
+                                    if(source.equals("")){
+                                        if(events.get(k).payload.containsKey("target.id"))
+                                            source = events.get(k).payload.get("target.id");
+                                        else
+                                            source = events.get(k).payload.get("target.name");
+                                    }
+                                    else{
+                                        if(events.get(k).payload.containsKey("target.id"))
+                                            source = source + "," + events.get(k).payload.get("target.id");
+                                        else
+                                            source = source + "," + events.get(k).payload.get("target.name");
+                                    }
+                                    //source = source == "" ? events.get(k).payload.get("target.id") : source + "," + events.get(k).payload.get("target.id");
                                     input.add(events.get(k).payload.get("target.value").replaceAll("\\P{Print}", " "));
                                     break;
                                 }
@@ -174,15 +192,6 @@ public class transformationDiscoverer {
 
         Boolean preprocessing = false;
 
-        /* Small tweak
-        var temp = seed.get(0).getInputExample();
-        for(var el: temp)
-            if(el.contains(", ")){
-                preprocessing = true;
-                break;
-            }
-         */
-
         System.out.println("\n" + getFoofahTransformation("RPM/src/foofah-master/foofah.py", head, "--timeout 3600", preprocessing) + "\n");
 
         /*
@@ -198,7 +207,7 @@ public class transformationDiscoverer {
         discoverCorrelation(patterns.get(patterns.keySet().toArray()[0]));
 
         for(String pattern: patterns.keySet()){
-            var transformation = getFoofahTransformation("RPM/src/foofah-master/foofah.py", getSeed(1.0/patterns.get(pattern).size(), patterns.get(pattern)), "--timeout 600", false);
+            var transformation = getFoofahTransformation("RPM/src/foofah-master/foofah.py", getSeed(1.0/patterns.get(pattern).size(), patterns.get(pattern)), "--timeout 3600", false);
             //System.out.println(transformation);
             if(!groupedPatterns.containsKey(transformation))
                 groupedPatterns.put(transformation, Collections.singletonList(pattern));

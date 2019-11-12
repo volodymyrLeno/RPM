@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public final class segmentator {
-    public static HashMap<String, List<Event>> segment(List<Event> events){
+    public static HashMap<String, List<Event>> segment(List<Event> events, String endAction){
         HashMap<String, List<Event>> cases = new HashMap<>();
         Integer id = 1;
         List<Event> caseEvents = new ArrayList<>();

@@ -9,56 +9,41 @@ import java.util.*;
 public class Main {
 
     public static void main(String[] args) {
-        //List<String> files = new ArrayList<>();
-
-        List<String> files = new ArrayList<>(Arrays.asList(args[0].split(",")));
-        //files.add("/home/vleno/Desktop/RPM/RPM/src/logs/experiments/d61.csv");
-        //files.add("/home/vleno/Desktop/RPM/RPM/src/logs/experiments/d5.csv");
-        //files.add("/home/vleno/Desktop/RPM/RPM/src/logs/experiments/d4.csv");
-        //files.add("/home/vleno/Desktop/RPM/RPM/src/logs/experiments/d3.csv");
-        //files.add("/home/vleno/Desktop/RPM/RPM/src/logs/experiments/d2.csv");
-        //files.add("/home/vleno/Desktop/RPM/RPM/src/logs/experiments/d1.csv");
-
-        //String files = args[0];
-
+        String path = args[0];
         List<String> readEvents = new ArrayList<>(Arrays.asList(args[1].split(",")));
         List<String> writeEvents = new ArrayList<>(Arrays.asList(args[2].split(",")));
         Boolean preprocess = Boolean.parseBoolean(args[3]);
+        String approach = args[4];
 
         List<Event> events;
         HashMap<String, List<Event>> cases;
 
-        /*
         if(preprocess){
             preprocess(path);
-            events = logReader.readCSV(path.substring(0,path.lastIndexOf(".")) + "_filtered.csv");
+            events = logReader.readCSV(path.substring(0, path.lastIndexOf(".")) + "_filtered.csv");
+            cases = segmentator.segment(events, "submitButton");
         }
-        else
+        else{
             events = logReader.readCSV(path);
-
-         */
-
-        for(String file: files) {
-            events = logReader.readCSV(file);
             cases = segmentator.groupByCases(events);
+        }
 
-            // System.out.println(transformationDiscoverer.getFoofahTransformation("RPM/src/foofah-master/foofah.py", examples, "--timeout 60000", true));
-
-            // Approach 1: Map all inputs to all outputs
-
-            /*
+        if(approach.equals("-1")){
             var totalStartTime = System.currentTimeMillis();
             var result = transformationDiscoverer.getFoofahTransformation2("RPM/src/foofah-master/foofah.py", cases, "--timeout 3600", true);
             System.out.println(result);
             var totalStopTime = System.currentTimeMillis();
             System.out.println("\nTotal execution time: " + (totalStopTime - totalStartTime) / 1000.0 + " sec\n");
-
-             */
-
-            //Approach 2: Correlate inputs and outputs, and find a mapping
-
+        }
+        else if(approach.equals("-2")){
             var totalStartTime = System.currentTimeMillis();
             var examples = transformationDiscoverer.extractExamples(cases, readEvents, writeEvents);
+
+            if(examples.size() == 0){
+                System.out.println("No transformation examples found");
+                return;
+            }
+
             var groupedExamples = transformationDiscoverer.groupExamples(examples);
             for (String key : groupedExamples.keySet()) {
                 var startTime = System.currentTimeMillis();
@@ -68,12 +53,15 @@ public class Main {
             }
             var totalStopTime = System.currentTimeMillis();
             System.out.println("\nTotal execution time: " + (totalStopTime - totalStartTime) / 1000.0 + " sec\n");
-
-
-            // Approach 3: Correlate inputs and outputs, group inputs by patterns and find a mapping
-
-            /*
+        }
+        else if(approach.equals("-3")){
             var examples = transformationDiscoverer.extractExamples(cases, readEvents, writeEvents);
+
+            if(examples.size() == 0){
+                System.out.println("No transformation examples found");
+                return;
+            }
+
             var totalStartTime = System.currentTimeMillis();
 
             var groupedExamples = transformationDiscoverer.groupExamples(examples);
@@ -87,8 +75,10 @@ public class Main {
             }
             var totalStopTime = System.currentTimeMillis();
             System.out.println("\nTotal execution time: " + (totalStopTime - totalStartTime) / 1000.0 + " sec\n");
-
-             */
+        }
+        else{
+            System.out.println("Wrong input parameter! Select one from the given options:\n\n\"-1\" - baseline approach\n\"-2\" - grouping by target" +
+                    "\n\"-3\" - grouping by target and input structure");
         }
     }
 
@@ -98,7 +88,7 @@ public class Main {
         Collections.sort(events, Comparator.comparing(ev -> ev.getTimestamp()));
 
         System.out.println("Applying segmentation...");
-        HashMap<String, List<Event>> cases = segmentator.segment(events);
+        HashMap<String, List<Event>> cases = segmentator.segment(events, "submitButton");
 
         for(String caseID: cases.keySet())
             for(Event event: cases.get(caseID)){
@@ -150,7 +140,7 @@ public class Main {
     public static void runSimplifier(String path){
         try{
             System.out.println("Running simplifier ...");
-            Process process = Runtime.getRuntime().exec("java -jar /home/vleno/Desktop/RPM/RPM/src/RPA_SemFilter.jar " + path);
+            Process process = Runtime.getRuntime().exec("java -jar RPM/src/RPA_SemFilter.jar " + path);
             BufferedReader reader =
                     new BufferedReader(new InputStreamReader(process.getInputStream()));
             while ((reader.readLine()) != null) {}
