@@ -1,5 +1,6 @@
 package data;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
@@ -8,20 +9,43 @@ public class Event {
     public String eventType;
     private String timestamp;
     public HashMap<String, String> payload;
+    public List<String> attributes;
 
     public Event(List<String> attributes, String[] values){
         String temp;
-        this.caseID = "";
+        this.attributes = new ArrayList<>(attributes);
+        this.caseID = attributes.contains("caseID") ? values[attributes.indexOf("caseID")] : "";
         this.eventType = values[attributes.indexOf("eventType")];
         this.timestamp = values[attributes.indexOf("timeStamp")];
         payload = new HashMap<>();
         for(int i = 0; i < values.length; i++){
             if(values[i].matches("\"+"))
-                temp = "\"\"";
+                temp = "";
             else
-                temp = values[i].replaceAll("\"([^;\"\\[\\]]+)\"","$1").replaceAll("\"{2,}","\"").replaceAll("^\"(.*)\"$", "$1");
-            if(!temp.equals("") && i != attributes.indexOf("eventType") && i != attributes.indexOf("timeStamp"))
-                payload.put(attributes.get(i), temp);
+            {
+                temp = values[i].replaceAll("\"{4}","\"\"").replaceAll("\"([^;\"\\[\\]]+)\"","$1").replaceAll("^\"(.*)\"$", "$1");
+                //temp = values[i];
+                /*
+                temp = values[i].replaceAll("\"\"\"\"","\"\"");
+                temp = temp.replaceAll("\"([^;\"\\[\\]]+)\"","$1");
+                temp = temp.replaceAll("^\"(.*)\"$", "$1");
+
+                 */
+            }
+                //temp = values[i].replaceAll("\"([^;\"\\[\\]]+)\"","$1").replaceAll("^\"(.*)\"$", "$1");
+
+
+            if(i != attributes.indexOf("eventType") && i != attributes.indexOf("timeStamp") && i != attributes.indexOf("caseID"))
+            {
+                if((!temp.equals("\"\"") && !temp.equals("")) || (i == attributes.indexOf("target.value")
+                        && (this.eventType.equals("clickTextField") ||
+                        this.eventType.equals("editField") || this.eventType.equals("getCell") || this.eventType.equals("editRange"))))
+                    payload.put(attributes.get(i), temp);
+            }
+
+
+            //if(!temp.equals("") && i != attributes.indexOf("eventType") && i != attributes.indexOf("timeStamp"))
+            //    payload.put(attributes.get(i), temp);
         }
     }
 
@@ -37,6 +61,10 @@ public class Event {
         this.eventType = event.eventType;
         this.timestamp = event.timestamp;
         this.payload = new HashMap<>(event.payload);
+    }
+
+    public String getTimestamp(){
+        return this.timestamp;
     }
 
     public void setCaseID(String caseID){
