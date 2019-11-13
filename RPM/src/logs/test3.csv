@@ -1,8 +1,0 @@
-timeStamp,userID,targetApp,eventType,url,content,target.workbookName,target.sheetName,target.id,target.className,target.tagName,target.type,target.name,target.value,target.innerText,target.checked,target.href,target.option,target.title,target.innerHTML
-2019-10-08T00:26:31.786Z,vleno,Excel,getRange,,,StudentRecords2.xlsx,Sheet1,A4:B4,,,,,"[[""Steven"";""Richards""]]",,,,,,
-2019-10-08T00:26:32.977Z,,OS-Clipboard,copy,,"""Steven\tRichards""",,,,,,,,,,,,,,
-2019-10-08T00:26:37.363Z,vleno,Chrome,selectTab,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,156,,,,,,,,,,Zoho Forms,
-2019-10-08T00:26:41.191Z,vleno,Chrome,reload,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,,,,,,,,,,
-2019-10-08T00:26:43.012Z,vleno,Chrome,clickTextField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Name_First,"""""",,,,,,
-2019-10-08T00:26:44.093Z,vleno,Chrome,paste,https://forms.zoho.com/universityofmelbourne/form/NewRecord,"""Steven\tRichards""",,,,,INPUT,text,Name_First,"""""",,,,,,
-2019-10-08T00:26:47.917Z,vleno,Chrome,editField,https://forms.zoho.com/universityofmelbourne/form/NewRecord,,,,,,INPUT,text,Name_First,"""Steven\tRichards""",,,,,,
