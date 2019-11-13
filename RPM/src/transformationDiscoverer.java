@@ -17,9 +17,9 @@ public class transformationDiscoverer {
 
     /* READY FOR USAGE */
 
-    private static String createFile(StringBuilder sb) throws IOException{
-        String path = "RPM/src/foofah-master/foofahTEMP.txt";
-        File file = new File(path);
+    private static String createFile(String foofahPath, StringBuilder sb) throws IOException{
+        String tempFile = foofahPath + "foofahTEMP.txt";
+        File file = new File(tempFile);
         if (!file.exists())
             if (!file.createNewFile())
                 new IOException("Error occured when creating "+file.getAbsolutePath());
@@ -30,15 +30,16 @@ public class transformationDiscoverer {
         return file.getAbsolutePath();
     }
 
-    public static String execPython(String exec, String parameters, Boolean preprocessing) {
-        //String initialCommand = "t = f_split_char(t, 0, ', ')\n";
+    public static String execPython(String foofahPath, String parameters, Boolean preprocessing) {
+
+        foofahPath = foofahPath + "foofah.py";
 
         String output = null;
         try {
             String s = null;
             sb = new StringBuilder(100000);
 
-            Process p = Runtime.getRuntime().exec("python " + exec + " " + parameters);
+            Process p = Runtime.getRuntime().exec("python " + foofahPath + " " + parameters);
             BufferedReader stdInput = new BufferedReader(new InputStreamReader(p.getInputStream()));
 
             BufferedReader stdError = new BufferedReader(new InputStreamReader(p.getErrorStream()));
@@ -53,8 +54,6 @@ public class transformationDiscoverer {
                         "# Data Transformation\n" + "#") + 26);
                 if(output.equals("\n"))
                     output = "Equality";
-                //else
-                //   output = preprocessing ? initialCommand + output : output;
             }
             boolean error=false;
             while ((s = stdError.readLine()) != null) {
@@ -73,64 +72,6 @@ public class transformationDiscoverer {
         }
     }
 
-    /*
-    public static List<TransformationExample> extractExamples(HashMap<String, List<Event>> cases, List<String> readActions, List<String> writeActions){
-        List<TransformationExample> transformationExamples = new ArrayList<>();
-        String target;
-        String source;
-        for(String caseID: cases.keySet()){
-            List<Event> events = new ArrayList<>(cases.get(caseID));
-            for(int i = events.size()-1; i >= 0; i--){
-                if(writeActions.contains(events.get(i).eventType)){
-                    if(events.get(i).payload.containsKey("target.id"))
-                        target = events.get(i).payload.get("target.id");
-                    else
-                        target = events.get(i).payload.get("target.name");
-                    for(int j = i; j >= 0; j--)
-                        if(readActions.contains(events.get(j).eventType)){
-                            String input = events.get(j).payload.get("target.value").replaceAll("\\P{Print}", " ");
-                            String output =  events.get(i).payload.get("target.value").replaceAll("\\P{Print}", " ");
-                            if(events.get(j).payload.containsKey("target.id"))
-                                source = events.get(j).payload.get("target.id");
-                            else
-                                source = events.get(j).payload.get("target.name");
-                            transformationExamples.add(new TransformationExample(caseID, source, target, input, output));
-                            break;
-                        }
-                }
-            }
-        }
-        return transformationExamples;
-    }
-     */
-
-    /*
-    public static List<TransformationExample> extractExamples(HashMap<String, List<Event>> cases, List<String> readActions, List<String> writeActions){
-        List<TransformationExample> transformationExamples = new ArrayList<>();
-        for(String caseID: cases.keySet()){
-            List<Event> events = new ArrayList<>(cases.get(caseID));
-            for(int i = events.size()-1; i >= 0; i--){
-                if(events.get(i).eventType.equals("editField") && events.get(i-1).eventType.equals("paste")){
-                    String target = events.get(i).payload.get("target.name");
-                    for(int j = i; j >= 0; j--)
-                        if(events.get(j).eventType.equals("copy")){
-                            for(int k = j; k >= 0; k--)
-                                if(events.get(k).eventType.equals("getCell") || events.get(k).eventType.equals("editCell")){
-                                    String input = events.get(k).payload.get("target.value").replaceAll("\\P{Print}", " ");
-                                    String output =  events.get(i).payload.get("target.value").replaceAll("\\P{Print}", " ");
-                                    String source = events.get(k).payload.get("target.id");
-                                    transformationExamples.add(new TransformationExample(caseID, source, target, input, output));
-                                    break;
-                                }
-                            break;
-                        }
-                }
-            }
-        }
-        return transformationExamples;
-    }
-     */
-
     public static List<TransformationExample> extractExamples(HashMap<String, List<Event>> cases, List<String> readActions, List<String> writeActions){
         List<TransformationExample> transformationExamples = new ArrayList<>();
         for(String caseID: cases.keySet()) {
@@ -138,8 +79,6 @@ public class transformationDiscoverer {
             List<String> targets = new ArrayList<>();
             for (int i = events.size() - 1; i >= 0; i--) {
                 if(writeActions.contains(events.get(i).eventType) && !targets.contains(events.get(i).payload.get("target.name"))){
-                //if (events.get(i).eventType.equals("editField") && !targets.contains(events.get(i).payload.get("target.name"))) {
-                    //String target = events.get(i).payload.get("target.name");
                     String target = events.get(i).payload.containsKey("target.id") ? events.get(i).payload.get("target.id") :
                             events.get(i).payload.get("target.name");
                     String output = events.get(i).payload.get("target.value").replaceAll("\\P{Print}", " ");;
@@ -153,7 +92,6 @@ public class transformationDiscoverer {
                                 (events.get(j).payload.containsKey("target.id") && events.get(j).payload.get("target.id").equals(target)))) {
                             for (int k = j; k >= 0; k--)
                                 if(readActions.contains(events.get(k).eventType)){
-                                //if (events.get(k).eventType.equals("copyCell")) {
                                     if(source.equals("")){
                                         if(events.get(k).payload.containsKey("target.id"))
                                             source = events.get(k).payload.get("target.id");
@@ -166,7 +104,6 @@ public class transformationDiscoverer {
                                         else
                                             source = source + "," + events.get(k).payload.get("target.name");
                                     }
-                                    //source = source == "" ? events.get(k).payload.get("target.id") : source + "," + events.get(k).payload.get("target.id");
                                     input.add(events.get(k).payload.get("target.value").replaceAll("\\P{Print}", " "));
                                     break;
                                 }
@@ -183,7 +120,7 @@ public class transformationDiscoverer {
         return transformationExamples;
     }
 
-    public static void discoverDataTransformations(Double frac, List<TransformationExample> transformationExamples){
+    public static void discoverDataTransformations(String foofahPath, Double frac, List<TransformationExample> transformationExamples){
 
         List<TransformationExample> seed = getSeed(frac, transformationExamples);
         List<TransformationExample> head = head((int) Math.ceil(frac * transformationExamples.size()), transformationExamples);
@@ -192,7 +129,7 @@ public class transformationDiscoverer {
 
         Boolean preprocessing = false;
 
-        System.out.println("\n" + getFoofahTransformation("RPM/src/foofah-master/foofah.py", head, "--timeout 3600", preprocessing) + "\n");
+        System.out.println("\n" + getFoofahTransformation(foofahPath, head, "--timeout 3600", preprocessing) + "\n");
 
         /*
         if(checkForTransformation(seed.get(0).getInputExample(), seed.get(0).getOutputExample()))
@@ -202,13 +139,12 @@ public class transformationDiscoverer {
          */
     }
 
-    public static void discoverTransformationsByPatterns(HashMap<String, List<TransformationExample>> patterns){
+    public static void discoverTransformationsByPatterns(String foofahPath, HashMap<String, List<TransformationExample>> patterns){
         HashMap<String, List<String>> groupedPatterns = new HashMap<>();
         discoverCorrelation(patterns.get(patterns.keySet().toArray()[0]));
 
         for(String pattern: patterns.keySet()){
-            var transformation = getFoofahTransformation("RPM/src/foofah-master/foofah.py", getSeed(1.0/patterns.get(pattern).size(), patterns.get(pattern)), "--timeout 3600", false);
-            //System.out.println(transformation);
+            var transformation = getFoofahTransformation(foofahPath, getSeed(1.0/patterns.get(pattern).size(), patterns.get(pattern)), "--timeout 3600", false);
             if(!groupedPatterns.containsKey(transformation))
                 groupedPatterns.put(transformation, Collections.singletonList(pattern));
             else
@@ -252,7 +188,6 @@ public class transformationDiscoverer {
         List<TransformationExample> seed = new ArrayList<>();
 
         int num = (int) Math.ceil(frac * transformationExamples.size());
-        //System.out.println(num);
         List<Integer> indexes = new ArrayList<>();
         Random random = new Random();
         while(seed.size() < num) {
@@ -336,34 +271,10 @@ public class transformationDiscoverer {
                         outputs.add(events.get(i).payload.get("target.value").replaceAll("\\P{Print}", " "));
                         break;
                     }
-                /*
-                for(int j = i; j >= 0; j--)
-                    if(events.get(j).eventType.equals("paste") && events.get(j).payload.get("target.name").equals(target)){
-                        targets.add(target);
-                        outputs.add(events.get(i).payload.get("target.value").replaceAll("\\P{Print}", ""));
-                    }
-
-                 */
             }
         Collections.reverse(outputs);
         return outputs;
     }
-
-    /*
-    public static List<List<String>> getInputs(List<TransformationExample> transformationExamples){
-        Collections.reverse(transformationExamples);
-        List<List<String>> inputs = transformationExamples.stream().map(TransformationExample::getInputExample).collect(Collectors.toList());
-        Collections.reverse(transformationExamples);
-        return inputs.stream().distinct().collect(Collectors.toList());
-    }
-
-    public static List<List<String>> getOutputs(List<TransformationExample> transformationExamples){
-        Collections.reverse(transformationExamples);
-        List<List<String>> outputs = transformationExamples.stream().map(TransformationExample::getOutputExample).collect(Collectors.toList());
-        Collections.reverse(transformationExamples);
-        return outputs.stream().distinct().collect(Collectors.toList());
-    }
-     */
 
     public static HashMap<String, List<TransformationExample>> groupExamples(List<TransformationExample> transformationExamples){
         /*
@@ -447,9 +358,7 @@ public class transformationDiscoverer {
                 replaceAll("\"\"\"\"","\"\"").replaceAll(";", ", ");
     }
 
-    /* UNDER DEVELOPMENT */
-
-    public static String getFoofahTransformation(String exec, List<TransformationExample> transformationExamples, String setting, Boolean preprocessing){
+    public static String getFoofahTransformation(String foofahPath, List<TransformationExample> transformationExamples, String setting, Boolean preprocessing){
         String output;
         for(var te: transformationExamples) {
             var inputs = te.getInputExample().stream().map(el -> "\"" + el + "\"").collect(Collectors.toList());
@@ -458,8 +367,8 @@ public class transformationDiscoverer {
         }
         sb = valuesToJsonFoofah(transformationExamples);
         try {
-            String path = createFile(sb);
-            output = execPython(exec,"--input "+path+ " "+setting, preprocessing);
+            String filePath = createFile(foofahPath, sb);
+            output = execPython(foofahPath,"--input " + filePath + " " + setting, preprocessing);
             if(output != null){
                 output = output.replace("\n\n", "");
             }
@@ -477,7 +386,7 @@ public class transformationDiscoverer {
         sb.append("], \"OutputTable\": [");
         listToStringBuilder(transformationExamples.stream().map(te -> te.getOutputExample()).collect(Collectors.toList()), sb, "to");
         sb.append("]}");
-        System.out.println(sb);
+        //System.out.println(sb);
         return sb;
     }
 
@@ -505,97 +414,15 @@ public class transformationDiscoverer {
         }
     }
 
-    /* Small tweak
-    public static void listToStringBuilder(List<List<String>> list, StringBuilder sb, String exampleType) {
-        int i=0;
-        for(var example: list){
-            if(example.size() == 1){
-                if(!example.get(0).contains(", ") || exampleType.equals("to"))
-                    sb.append("[\""+example.get(0).replaceAll(",\\s",",")+"\"]");
-                else{
-                    sb.append("[");
-                    String[] stringComp = example.get(0).split(",\\s");
-                    for (int j = 0; j < stringComp.length; j++) {
-                        sb.append("\"" + stringComp[j] + "\"");
-                        if (j < stringComp.length - 1)
-                            sb.append(',');
-                    }
-                    sb.append("]");
-                }
-            }
-            else{
-                int k = 0;
-                sb.append("[");
-                for(var value: example){
-                    sb.append("\"" + value + "\"");
-                    if(k < example.size() - 1)
-                        sb.append(",");
-                    k++;
-                }
-                sb.append("]");
-            }
-            if(i == list.size() - 1){
-                break;
-            }
-            sb.append(',');
-            i++;
-        }
-    }
-
-     */
-
-    /* For handling Excel operations
-    private static StringBuilder valuesToJsonFoofah(List<TransformationExample> transformationExamples) {
-        sb = new StringBuilder();
-        if(transformationExamples.get(0).getInputExample().matches("\\[\\[.*\\]\\]")){
-            sb.append("{\"InputTable\": ");
-            sb.append(prepareArray(transformationExamples.get(0).getInputExample()));
-            if(transformationExamples.get(0).getOutputExample().matches("\\[\\[.*\\]\\]")){
-                sb.append(", \"OutputTable\": ");
-                sb.append(prepareArray(transformationExamples.get(0).getOutputExample()));
-                sb.append("}");
-            }
-            else{
-                sb.append(", \"OutputTable\": [");
-                listToStringBuilder(Collections.singletonList(transformationExamples.get(0).getOutputExample()), sb, "to");
-                sb.append("]}");
-            }
-        }
-        else{
-            sb.append("{\"InputTable\": [");
-            listToStringBuilder(transformationExamples.stream().map(TransformationExample::getInputExample).collect(Collectors.toList()), sb, "from");
-            sb.append("], \"OutputTable\": [");
-            listToStringBuilder(transformationExamples.stream().map(TransformationExample::getOutputExample).collect(Collectors.toList()), sb, "to");
-            sb.append("]}");
-        }
-        System.out.println(sb);
-        return sb;
-    }
-
-    private static void listToStringBuilder(List<String> list, StringBuilder sb, String exampleType) {
-        int i = 0;
-        for(String value: list){
-            if(value.equals("\"\""))
-                sb.append("[" + value + "]");
-            else
-                sb.append("[\""+value+"\"]");
-            if(i == list.size() - 1){
-                break;
-            }
-            sb.append(',');
-            i++;
-        }
-    }
-
-     */
-
-    /* COPYING FOR NOW, REWORK IN THE FUTURE */
-
     public static String getFoofahTransformation2(String exec, HashMap<String, List<Event>> cases, String setting, Boolean preprocessing){
         String output = null;
+        for(var caseID: cases.keySet())
+            System.out.println(getInputs(cases.get(caseID)).stream().map(el -> "\"" + el + "\"").collect(Collectors.toList()) + " => " +
+                    getOutputs(cases.get(caseID)).stream().map(el -> "\"" + el + "\"").collect(Collectors.toList()));
+        System.out.println("\n\n");
         sb = valuesToJsonFoofah2(cases);
         try {
-            String path = createFile(sb);
+            String path = createFile(exec, sb);
             output = execPython(exec,"--input "+path+ " "+setting, preprocessing);
             if(output!= null && output.contains("','"))
                 output = output.replace("','","', '");
@@ -622,7 +449,7 @@ public class transformationDiscoverer {
         }
         sb.delete(sb.lastIndexOf(","), sb.length());
         sb.append("]}");
-        System.out.println(sb);
+        //System.out.println(sb);
         return sb;
     }
 
