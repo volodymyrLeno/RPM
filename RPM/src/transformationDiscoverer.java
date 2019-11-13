@@ -17,8 +17,8 @@ public class transformationDiscoverer {
 
     /* READY FOR USAGE */
 
-    private static String createFile(String foofahPath, StringBuilder sb) throws IOException{
-        String tempFile = foofahPath + "foofahTEMP.txt";
+    private static String createFile(StringBuilder sb) throws IOException{
+        String tempFile = "RPM/src/foofah-master/foofahTEMP.txt";
         File file = new File(tempFile);
         if (!file.exists())
             if (!file.createNewFile())
@@ -30,16 +30,13 @@ public class transformationDiscoverer {
         return file.getAbsolutePath();
     }
 
-    public static String execPython(String foofahPath, String parameters, Boolean preprocessing) {
-
-        foofahPath = foofahPath + "foofah.py";
-
+    public static String execPython(String exec, String parameters, Boolean preprocessing) {
         String output = null;
         try {
             String s = null;
             sb = new StringBuilder(100000);
 
-            Process p = Runtime.getRuntime().exec("python " + foofahPath + " " + parameters);
+            Process p = Runtime.getRuntime().exec("python " + exec + " " + parameters);
             BufferedReader stdInput = new BufferedReader(new InputStreamReader(p.getInputStream()));
 
             BufferedReader stdError = new BufferedReader(new InputStreamReader(p.getErrorStream()));
@@ -120,7 +117,7 @@ public class transformationDiscoverer {
         return transformationExamples;
     }
 
-    public static void discoverDataTransformations(String foofahPath, Double frac, List<TransformationExample> transformationExamples){
+    public static void discoverDataTransformations(Double frac, List<TransformationExample> transformationExamples){
 
         List<TransformationExample> seed = getSeed(frac, transformationExamples);
         List<TransformationExample> head = head((int) Math.ceil(frac * transformationExamples.size()), transformationExamples);
@@ -129,7 +126,7 @@ public class transformationDiscoverer {
 
         Boolean preprocessing = false;
 
-        System.out.println("\n" + getFoofahTransformation(foofahPath, head, "--timeout 3600", preprocessing) + "\n");
+        System.out.println("\n" + getFoofahTransformation(head, "--timeout 3600", preprocessing) + "\n");
 
         /*
         if(checkForTransformation(seed.get(0).getInputExample(), seed.get(0).getOutputExample()))
@@ -139,12 +136,12 @@ public class transformationDiscoverer {
          */
     }
 
-    public static void discoverTransformationsByPatterns(String foofahPath, HashMap<String, List<TransformationExample>> patterns){
+    public static void discoverTransformationsByPatterns(HashMap<String, List<TransformationExample>> patterns){
         HashMap<String, List<String>> groupedPatterns = new HashMap<>();
         discoverCorrelation(patterns.get(patterns.keySet().toArray()[0]));
 
         for(String pattern: patterns.keySet()){
-            var transformation = getFoofahTransformation(foofahPath, getSeed(1.0/patterns.get(pattern).size(), patterns.get(pattern)), "--timeout 3600", false);
+            var transformation = getFoofahTransformation(getSeed(1.0/patterns.get(pattern).size(), patterns.get(pattern)), "--timeout 3600", false);
             if(!groupedPatterns.containsKey(transformation))
                 groupedPatterns.put(transformation, Collections.singletonList(pattern));
             else
@@ -358,7 +355,7 @@ public class transformationDiscoverer {
                 replaceAll("\"\"\"\"","\"\"").replaceAll(";", ", ");
     }
 
-    public static String getFoofahTransformation(String foofahPath, List<TransformationExample> transformationExamples, String setting, Boolean preprocessing){
+    public static String getFoofahTransformation(List<TransformationExample> transformationExamples, String setting, Boolean preprocessing){
         String output;
         for(var te: transformationExamples) {
             var inputs = te.getInputExample().stream().map(el -> "\"" + el + "\"").collect(Collectors.toList());
@@ -367,8 +364,8 @@ public class transformationDiscoverer {
         }
         sb = valuesToJsonFoofah(transformationExamples);
         try {
-            String filePath = createFile(foofahPath, sb);
-            output = execPython(foofahPath,"--input " + filePath + " " + setting, preprocessing);
+            String filePath = createFile(sb);
+            output = execPython("RPM/src/foofah-master/foofah.py","--input " + filePath + " " + setting, preprocessing);
             if(output != null){
                 output = output.replace("\n\n", "");
             }
@@ -422,7 +419,7 @@ public class transformationDiscoverer {
         System.out.println("\n\n");
         sb = valuesToJsonFoofah2(cases);
         try {
-            String path = createFile(exec, sb);
+            String path = createFile(sb);
             output = execPython(exec,"--input "+path+ " "+setting, preprocessing);
             if(output!= null && output.contains("','"))
                 output = output.replace("','","', '");

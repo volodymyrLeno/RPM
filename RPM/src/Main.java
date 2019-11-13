@@ -10,11 +10,10 @@ public class Main {
 
     public static void main(String[] args) {
         String log = args[0];
-        String FoofahPath = args[1];
-        List<String> readEvents = new ArrayList<>(Arrays.asList(args[2].split(",")));
-        List<String> writeEvents = new ArrayList<>(Arrays.asList(args[3].split(",")));
-        Boolean preprocess = Boolean.parseBoolean(args[4]);
-        String approach = args[5];
+        List<String> readEvents = new ArrayList<>(Arrays.asList(args[1].split(",")));
+        List<String> writeEvents = new ArrayList<>(Arrays.asList(args[2].split(",")));
+        Boolean preprocess = Boolean.parseBoolean(args[3]);
+        String approach = args[4];
 
         List<Event> events;
         HashMap<String, List<Event>> cases;
@@ -31,7 +30,7 @@ public class Main {
 
         if(approach.equals("-1")){
             var totalStartTime = System.currentTimeMillis();
-            var result = transformationDiscoverer.getFoofahTransformation2(FoofahPath, cases, "--timeout 3600", true);
+            var result = transformationDiscoverer.getFoofahTransformation2("RPM/src/foofah-master/foofah.py", cases, "--timeout 3600", true);
             System.out.println(result);
             var totalStopTime = System.currentTimeMillis();
             System.out.println("\nTotal execution time: " + (totalStopTime - totalStartTime) / 1000.0 + " sec\n");
@@ -48,7 +47,7 @@ public class Main {
             var groupedExamples = transformationDiscoverer.groupExamples(examples);
             for (String key : groupedExamples.keySet()) {
                 var startTime = System.currentTimeMillis();
-                transformationDiscoverer.discoverDataTransformations(FoofahPath, 1.0, groupedExamples.get(key));
+                transformationDiscoverer.discoverDataTransformations(1.0, groupedExamples.get(key));
                 var stopTime = System.currentTimeMillis();
                 System.out.println("\nExecution time: " + (stopTime - startTime) / 1000.0 + " sec\n");
             }
@@ -70,7 +69,7 @@ public class Main {
             for (String key : groupedExamples.keySet()) {
                 var startTime = System.currentTimeMillis();
                 var patterns = tokenizer.clusterByPattern(groupedExamples.get(key));
-                transformationDiscoverer.discoverTransformationsByPatterns(FoofahPath, patterns);
+                transformationDiscoverer.discoverTransformationsByPatterns(patterns);
                 var stopTime = System.currentTimeMillis();
                 System.out.println("\nExecution time: " + (stopTime - startTime) / 1000.0 + " sec\n");
             }
