@@ -1,6 +1,6 @@
 # Transformation discoverer
 
-This is a command line tool to discover data transformations from UI logs. It works with UI logs recorded by RPA UI Logger tool available at https://github.com/apromore/RPA_UILogger. In addition to this distribution, you have to download data transformation tool called Foofah, which is avaialble at https://github.com/umich-dbgroup/foofah. Testing UI logs are available under RPM/RPM/src/logs/ folder. 
+This is a command line tool to discover data transformations from UI logs. It works with UI logs recorded by RPA UI Logger tool available at https://github.com/apromore/RPA_UILogger. In addition to this distribution, you have to download data transformation tool called Foofah, which is avaialble at https://github.com/umich-dbgroup/foofah. Testing UI logs are available under RPM/RPM/src/logs folder. 
 
 ## Requirements
 
