@@ -16,7 +16,7 @@ $ python -m pip install U pip setuptools
 The executable jar file is available under RPM/out/artifacts/RPM_jar folder. It requires the following input parameters:
 
 * logPath - path to UI log to be processed
-* foofahPath - path to foofah.py file (e.g. "\home\vleno\Desktop\RPM\RPM\src\foofah-master\")
+* foofahPath - path to foofah.py file (e.g. "/home/vleno/Desktop/RPM/out/artifacts/RPM_jar/foofah-master/")
 * readActions - list of read actions separated by comma (e.g. "copyCell")
 * writeActions - list of write actions separated by comma (e.g. "editField,editCell")
 * preprocessing - boolean flag that indicates whether segmentation and semantic filtering is required
