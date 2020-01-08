@@ -31,5 +31,5 @@ In order to use this tool you have to download all the source code. The executab
 The example of how to run the program:
 
 ```
-java -jar logs/useCase_filtered.csv foofah-master/ copyCell editField,editCell false -3
+java -jar RPM.jar logs/useCase_filtered.csv foofah-master/ copyCell editField,editCell false -3
 ```
